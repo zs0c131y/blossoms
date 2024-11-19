@@ -124,6 +124,18 @@ nav {
   font-size: 1.1rem;
 }
 
+.event-list a {
+  text-decoration: none;
+  color: inherit; 
+}
+
+
+.event-list a:hover {
+  text-decoration: underline; 
+  cursor: pointer;
+}
+
+
 .get-schedule {
   display: block;
   width: 200px;
