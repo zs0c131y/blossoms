@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #111 url("assets/images/bg1.jpg") center/cover fixed;
+  background: #111 url("./assets/images/index.bg.png") center/cover fixed;
   color: white;
 }
 
@@ -42,6 +42,7 @@ nav {
   max-width: 100%;
   border-radius: 10px;
   margin-bottom: 2rem;
+  padding-top: 10px;
 }
 
 .hero h1 {
