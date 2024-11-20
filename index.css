@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Questrial", sans-serif;
 }
 :root {
   --primary-color: #ffffff;
@@ -65,17 +65,18 @@ nav {
   margin-top: 2rem;
 }
 
-.hero img {
+.hero video {
   max-width: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-bottom: 2rem;
   padding-top: 10px;
+  display: block;
 }
 
 .hero h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
-  font-family: "Times New Roman", serif;
+  font-family: "Georgia", serif;
 }
 
 .hero p {

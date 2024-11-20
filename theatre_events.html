@@ -3,41 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Schedule - Blossoms</title>
-    <link rel="stylesheet" href="schedule.css" />
+    <title>Theatre Events - Blossoms</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="theatre_events.css" />
   </head>
   <body>
     <nav class="navbar">
-      <img
-        src="./assets/images/swo-logo-tp.png"
-        alt="SWO Logo"
-        class="logo swo-logo"
-      />
+      <img src="./assets/images/swo-logo-tp.png" alt="SWO Logo" class="logo" />
       <div class="nav-links">
-        <button class="mobile-menu-btn">
-          <span></span><span></span><span></span>
-        </button>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="events.html">Events</a></li>
-          <li><a href="schedule.html" class="active">Schedule</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
           <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </div>
       <img
         src="./assets/images/cu-logo-tp.png"
         alt="CHRIST Logo"
-        class="logo christ-logo"
+        class="logo"
       />
     </nav>
 
-    <h1 class="title">Schedule</h1>
-    <p class="subtitle">View the schedule of events!</p>
-    <!-- <div class="doc"> -->
-    <iframe
-      src="https://docs.google.com/document/d/e/2PACX-1vRpZbz3ufIKZcbyxSZy-0velzjcDGv6WmNSDIDSLkEn_EC72VrZ3SCVoUAeSe5D8P8JRpN5CG5CWDtz/pub?embedded=true"
-    ></iframe>
-    <!-- </div> -->
+    <div class="main-content">
+      <div class="events-list">
+        <!-- Event items will be dynamically populated -->
+      </div>
+      <div class="event-details">
+        <!-- Event details will be dynamically populated -->
+      </div>
+    </div>
 
     <footer>
       <p>
@@ -47,7 +45,6 @@
       </p>
       <p>Made with <span class="heart">❤</span> in CHRIST BYC</p>
     </footer>
-
-    <script src="schedule.js"></script>
+    <script src="theatre_events.js"></script>
   </body>
 </html>
