@@ -4,6 +4,12 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
+:root {
+  --primary-color: #ffffff;
+  --bg-transparent: rgba(255, 255, 255, 0.1);
+  --category-bg: rgba(128, 128, 128, 0.2);
+  --glow-color: rgba(255, 255, 255, 0.5);
+}
 
 body {
   background: #111 url("./assets/images/index.bg.png") center/cover fixed;
@@ -18,54 +24,39 @@ nav {
 }
 
 .logo {
-  height: 50px;
+  height: 110px;
+}
+
+.logo-cu {
+  height: 100px;
 }
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  justify-content: center;
+  gap: 1.4rem;
 }
 
 .nav-links a {
-  color: white;
+  color: var(--primary-color);
   text-decoration: none;
   font-size: 1.1rem;
   padding: 0.5rem 1rem;
-  border: 2px solid transparent;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-  transition: color 0.3s ease;
-}
-
-.nav-links a::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, #3a2c34, #272636, #3c4e84);
-  transform: rotate(45deg);
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.5s ease;
-}
-
-
-.nav-links a:hover {
-  color: black;
-}
-
-.nav-links a:hover::before {
-  opacity: 1;
-  transform: rotate(0deg);
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
-  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.6), 0 0 30px 10px rgba(38, 38, 46, 0.8);
-  border-color: rgba(241, 241, 241, 0.8);
-  color: #fff;
+  background: var(--bg-transparent);
+  box-shadow: 0 0 15px var(--glow-color);
+  transform: scale(1.05);
+  border-radius: 7px;
+}
+
+.nav-links a.active {
+  background: var(--bg-transparent);
+  border-radius: 7px;
+  box-shadow: 0 0 20px var(--glow-color);
 }
 
 .hero {
@@ -126,15 +117,13 @@ nav {
 
 .event-list a {
   text-decoration: none;
-  color: inherit; 
+  color: inherit;
 }
-
 
 .event-list a:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
   cursor: pointer;
 }
-
 
 .get-schedule {
   display: block;

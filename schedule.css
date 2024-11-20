@@ -17,6 +17,7 @@ body {
   background: #111 url("assets/images/bg.jpg") center/cover fixed;
   min-height: 100vh;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -105,76 +106,22 @@ main {
   opacity: 0.9;
 }
 
-.event-categories {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 3rem;
+.doc {
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
-.category {
-  background: var(--category-bg);
-  backdrop-filter: blur(5px);
+iframe {
+  display: block;
+  width: 800px;
+  height: 400vh;
+  border: none;
   border-radius: 10px;
-  overflow: hidden;
-}
-
-.category-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 2rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.category-header:hover {
-  background: rgba(255, 255, 255, 0.15);
-  transform: scale(1.01);
-}
-
-.category-header h2 {
-  font-family: "Arial Black", Arial, sans-serif;
-  font-size: 2rem;
-  letter-spacing: 0.1em;
-}
-
-.arrow {
-  font-size: 2rem;
-  transition: transform 0.3s ease;
-}
-
-.category.active .arrow {
-  transform: rotate(90deg);
-}
-
-.category-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-}
-
-.category.active .category-content {
-  max-height: 500px; /* Adjust based on content */
-}
-
-.category-content ul {
-  list-style: none;
-  padding: 1.5rem 2rem;
-}
-
-.category-content li {
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-  padding-left: 1.5rem;
-  position: relative;
-}
-
-.category-content li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: var(--primary-color);
+  background: var(--bg-transparent);
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .schedule-btn {
@@ -246,6 +193,10 @@ footer p {
   .category-header h2 {
     font-size: 1.5rem;
   }
+
+  iframe {
+    height: 70vh;
+  }
 }
 
 .mobile-menu-btn.active span:nth-child(1) {
@@ -258,4 +209,11 @@ footer p {
 
 .mobile-menu-btn.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -6px);
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  iframe {
+    height: 60vh;
+  }
 }
