@@ -3,94 +3,136 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="index.css" />
     <title>BLOSSOMS 2024-25</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/swo.png" />
   </head>
   <body>
-    <nav>
-      <img src="./assets/images/swo-logo-tp.png" alt="SWO Logo" class="logo" />
-      <div class="nav-links">
-        <a href="#home" class="active">Home</a>
-        <a href="events.html">Events</a>
-        <a href="#schedule">Schedule</a>
-        <a href="#gallery">Gallery</a>
-      </div>
-      <img src="./assets/images/cu-logo-tp.png" alt="CU Logo" class="logo-cu" />
-    </nav>
-
-    <div class="hero">
-      <video autoplay muted loop width="100%">
-        <source src="./assets/videos/Promo 2024.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <h1>BLOSSOMS</h1>
-      <p>
-        Blossoms 2024-25 packs a surfeit of events which are simplified to be
-        categorized in 4 themes: Stage, Theatre, Art and Literary Events.
-      </p>
-    </div>
-
-    <div class="events-grid">
-      <div class="event-category">
-        <h2>Stage Events</h2>
-        <ul class="event-list">
-          <li><a href="events.html">Battle of Bands (Indian)</a></li>
-          <li><a href="events.html">Battle of Bands (Western)</a></li>
-          <li><a href="events.html">Mime</a></li>
-          <li><a href="events.html">Group Western Acapella</a></li>
-          <li><a href="events.html">Group Dance (Film/Folk)</a></li>
-          <li><a href="events.html">Solo Indian Dance (Classical)</a></li>
-        </ul>
-      </div>
-
-      <div class="event-category">
-        <h2>Theatre Events</h2>
-        <ul class="event-list">
-          <li><a href="events.html">Proscenium</a></li>
-          <li><a href="events.html">Street Theatre</a></li>
-        </ul>
-      </div>
-
-      <div class="event-category">
-        <h2>Art Events</h2>
-        <ul class="event-list">
-          <li><a href="events.html">Cartooning</a></li>
-          <li><a href="events.html">Greeting Card Making</a></li>
-          <li><a href="events.html">Painting</a></li>
-          <li><a href="events.html">Pot Art</a></li>
-          <li><a href="events.html">Poster Making</a></li>
-        </ul>
-      </div>
-
-      <div class="event-category">
-        <h2>Literary Events</h2>
-        <ul class="event-list">
-          <li><a href="events.html">Extempore</a></li>
-          <li><a href="events.html">Dumb Charades</a></li>
-          <li><a href="events.html">Just-a-minute (JAM)</a></li>
-          <li><a href="events.html">The Quiz Whizz</a></li>
-          <li><a href="events.html">Pot Pourri</a></li>
-        </ul>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+      <div class="loading-content">
+        <h1 class="loading-title">BLOSSOMS 2024-25</h1>
+        <div class="dates-container">
+          <div class="date-section">
+            <div class="date-title">Registrations Open</div>
+            <div class="date">November 25th, 2024 onwards</div>
+          </div>
+          <div class="divider"></div>
+          <div class="date-section">
+            <div class="date-title">Inauguration</div>
+            <div class="date">November 29th, 2024</div>
+          </div>
+        </div>
+        <div class="spinner"></div>
       </div>
     </div>
 
-    <a href="schedule.html" class="get-schedule">Get Schedule</a>
+    <!-- Main Content -->
+    <div class="main-content">
+      <nav>
+        <img
+          src="./assets/images/swo-logo-tp.png"
+          alt="SWO Logo"
+          class="logo"
+        />
 
-    <footer>
-      <div class="footer-content">
-        <div class="divider-line"></div>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links">
+          <a href="#home" class="active">Home</a>
+          <a href="events.html">Events</a>
+          <a href="schedule.html">Schedule</a>
+          <!-- <a href="#gallery">Gallery</a> -->
+        </div>
+
+        <img
+          src="./assets/images/cu-logo-tp.png"
+          alt="CHRIST Logo"
+          class="logo-cu"
+        />
+      </nav>
+
+      <section class="hero">
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          playsinline
+          preload="metadata"
+          poster="assets/images/loader.jpg"
+        >
+          <source src="assets/videos/aftermovie.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <h1>BLOSSOMS</h1>
         <p>
-          In case of queries, please drop a mail to
-          swo.yeshwanthpur@christuniversity.in or visit the SWO Office on 7th
-          Floor, Block C.
+          Blossoms 2024-25 packs a surfeit of events which are simplified to be
+          categorized in 4 themes: Stage, Theatre, Art and Literary Events.
         </p>
-        <p>Made with <span class="heart">❤</span> in CHRIST BYC</p>
+      </section>
+
+      <div class="events-grid">
+        <div class="event-category">
+          <h2>Stage Events</h2>
+          <ul class="event-list">
+            <li><a href="events.html">Battle of Bands (Indian)</a></li>
+            <li><a href="events.html">Battle of Bands (Western)</a></li>
+            <li><a href="events.html">Mime</a></li>
+            <li><a href="events.html">Group Western Acapella</a></li>
+            <li><a href="events.html">Group Dance (Film/Folk)</a></li>
+            <li><a href="events.html">Solo Indian Dance (Classical)</a></li>
+          </ul>
+        </div>
+
+        <div class="event-category">
+          <h2>Theatre Events</h2>
+          <ul class="event-list">
+            <li><a href="events.html">Proscenium</a></li>
+            <li><a href="events.html">Street Theatre</a></li>
+          </ul>
+        </div>
+
+        <div class="event-category">
+          <h2>Art Events</h2>
+          <ul class="event-list">
+            <li><a href="events.html">Cartooning</a></li>
+            <li><a href="events.html">Greeting Card Making</a></li>
+            <li><a href="events.html">Painting</a></li>
+            <li><a href="events.html">Pot Art</a></li>
+            <li><a href="events.html">Poster Making</a></li>
+          </ul>
+        </div>
+
+        <div class="event-category">
+          <h2>Literary Events</h2>
+          <ul class="event-list">
+            <li><a href="events.html">Extempore</a></li>
+            <li><a href="events.html">Dumb Charades</a></li>
+            <li><a href="events.html">Just-a-minute (JAM)</a></li>
+            <li><a href="events.html">The Quiz Whizz</a></li>
+            <li><a href="events.html">Pot Pourri</a></li>
+          </ul>
+        </div>
       </div>
-    </footer>
+
+      <a href="schedule.html" class="get-schedule">Get Schedule</a>
+
+      <footer>
+        <div class="footer-content">
+          <div class="divider-line"></div>
+          <p>
+            In case of queries, please drop a mail to
+            swo.yeshwanthpur@christuniversity.in
+          </p>
+          <p>or visit the SWO Office on 7th Floor, Block C.</p>
+          <p>Made with <span class="heart">❤</span> in CHRIST BYC</p>
+        </div>
+      </footer>
+    </div>
 
     <script src="index.js"></script>
   </body>

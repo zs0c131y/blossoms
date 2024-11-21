@@ -3,48 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stage Events - Blossoms</title>
+    <title>Stage Events - BLOSSOMS 2024-25</title>
+    <link rel="stylesheet" href="stage_events.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="stage_events.css" />
   </head>
   <body>
     <nav class="navbar">
       <img src="./assets/images/swo-logo-tp.png" alt="SWO Logo" class="logo" />
+
+      <button class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <div class="nav-links">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="schedule.html">Schedule</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="events.html" class="active">Events</a>
+        <a href="schedule.html">Schedule</a>
+        <!-- <a href="#gallery">Gallery</a> -->
       </div>
+
       <img
         src="./assets/images/cu-logo-tp.png"
         alt="CHRIST Logo"
-        class="logo"
+        class="logo logo-cu"
       />
     </nav>
 
     <div class="main-content">
-      <div class="events-list">
-        <!-- Event items will be dynamically populated -->
-      </div>
-      <div class="event-details">
-        <!-- Event details will be dynamically populated -->
-      </div>
+      <!-- Events list will be populated by JavaScript -->
+      <div class="events-list"></div>
+
+      <!-- Event details will be updated by JavaScript -->
+      <div class="event-details"></div>
     </div>
 
     <footer>
       <p>
         In case of queries, please drop a mail to
-        swo.yeshwanthpur@christuniversity.in or visit the SWO Office on 7th
-        Floor, Block C.
+        swo.yeshwanthpur@christuniversity.in
       </p>
+      <p>or visit the SWO Office on 7th Floor, Block C.</p>
       <p>Made with <span class="heart">❤</span> in CHRIST BYC</p>
     </footer>
+
     <script src="stage_events.js"></script>
   </body>
 </html>

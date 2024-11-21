@@ -17,17 +17,22 @@
         alt="SWO Logo"
         class="logo swo-logo"
       />
+
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <div class="nav-links">
-        <button class="mobile-menu-btn">
-          <span></span><span></span><span></span>
-        </button>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="events.html" class="active">Events</a></li>
           <li><a href="schedule.html">Schedule</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
+          <!-- <li><a href="#gallery">Gallery</a></li> -->
         </ul>
       </div>
+
       <img
         src="./assets/images/cu-logo-tp.png"
         alt="CHRIST Logo"
@@ -76,6 +81,12 @@
       </div>
 
       <a href="schedule.html" class="schedule-btn">Get Schedule</a>
+      <a
+        href="https://docs.google.com/document/d/1uGeT83qsmd3qlrMFb_icf4TZ7dHoR6IAkxD92xzTYtU/edit?usp=sharing"
+        class="rules-btn"
+        target="_blank"
+        >Detailed Rules & Regulations</a
+      >
     </div>
 
     <footer>
@@ -87,6 +98,35 @@
       <p>Made with <span class="heart">❤</span> in CHRIST BYC</p>
     </footer>
 
-    <script src="events.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+        const navLinks = document.querySelector(".nav-links");
+        const body = document.body;
+
+        mobileMenuBtn.addEventListener("click", function () {
+          // Toggle the active class on menu button
+          this.classList.toggle("active");
+          // Toggle the active class on navigation
+          navLinks.classList.toggle("active");
+          // Prevent body scrolling when menu is open
+          body.style.overflow = this.classList.contains("active")
+            ? "hidden"
+            : "";
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener("click", function (e) {
+          if (
+            !mobileMenuBtn.contains(e.target) &&
+            !navLinks.contains(e.target)
+          ) {
+            mobileMenuBtn.classList.remove("active");
+            navLinks.classList.remove("active");
+            body.style.overflow = "";
+          }
+        });
+      });
+    </script>
   </body>
 </html>

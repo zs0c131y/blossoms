@@ -2,8 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Schedule - Blossoms</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Schedule - SWO</title>
     <link rel="stylesheet" href="schedule.css" />
   </head>
   <body>
@@ -13,17 +17,22 @@
         alt="SWO Logo"
         class="logo swo-logo"
       />
+
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <div class="nav-links">
-        <button class="mobile-menu-btn">
-          <span></span><span></span><span></span>
-        </button>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="schedule.html" class="active">Schedule</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
+          <!-- <li><a href="#gallery">Gallery</a></li> -->
         </ul>
       </div>
+
       <img
         src="./assets/images/cu-logo-tp.png"
         alt="CHRIST Logo"
@@ -31,23 +40,101 @@
       />
     </nav>
 
-    <h1 class="title">Schedule</h1>
-    <p class="subtitle">View the schedule of events!</p>
-    <!-- <div class="doc"> -->
-    <iframe
-      src="https://docs.google.com/document/d/e/2PACX-1vRpZbz3ufIKZcbyxSZy-0velzjcDGv6WmNSDIDSLkEn_EC72VrZ3SCVoUAeSe5D8P8JRpN5CG5CWDtz/pub?embedded=true"
-    ></iframe>
-    <!-- </div> -->
+    <main>
+      <h1 class="title">Schedule</h1>
+      <p class="subtitle">View the schedule of events!</p>
+
+      <div class="doc">
+        <iframe
+          src="https://docs.google.com/document/d/e/2PACX-1vRpZbz3ufIKZcbyxSZy-0velzjcDGv6WmNSDIDSLkEn_EC72VrZ3SCVoUAeSe5D8P8JRpN5CG5CWDtz/pub?embedded=true"
+          title="Schedule Document"
+          scrolling="yes"
+          allowfullscreen="true"
+        ></iframe>
+      </div>
+
+      <a href="events.html" class="contact-btn">See Events</a>
+    </main>
 
     <footer>
       <p>
         In case of queries, please drop a mail to
-        swo.yeshwanthpur@christuniversity.in or visit the SWO Office on 7th
-        Floor, Block C.
+        swo.yeshwanthpur@christuniversity.in
       </p>
-      <p>Made with <span class="heart">❤</span> in CHRIST BYC</p>
+      <p>or visit the SWO Office on 7th Floor, Block C.</p>
+      <p class="footer-love">
+        Made with <span class="heart">❤</span> in CHRIST BYC
+      </p>
     </footer>
 
-    <script src="schedule.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+        const navLinks = document.querySelector(".nav-links");
+        const body = document.body;
+        const iframe = document.querySelector("iframe");
+
+        // Mobile Menu Toggle
+        mobileMenuBtn.addEventListener("click", function () {
+          this.classList.toggle("active");
+          navLinks.classList.toggle("active");
+          body.style.overflow = this.classList.contains("active")
+            ? "hidden"
+            : "";
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener("click", function (e) {
+          if (
+            !mobileMenuBtn.contains(e.target) &&
+            !navLinks.contains(e.target)
+          ) {
+            mobileMenuBtn.classList.remove("active");
+            navLinks.classList.remove("active");
+            body.style.overflow = "";
+          }
+        });
+
+        // Iframe Adjustment Function
+        function adjustIframe() {
+          const windowWidth = window.innerWidth;
+          const windowHeight = window.innerHeight;
+
+          // Set proper zoom and height based on screen size
+          if (windowWidth <= 480) {
+            iframe.style.height = "80vh";
+            iframe.style.minHeight = "300px";
+            // Small mobile devices
+            document.querySelector(".doc").style.zoom = "1"; // Reset container zoom
+          } else if (windowWidth <= 768) {
+            iframe.style.height = "75vh";
+            iframe.style.minHeight = "350px";
+            // Tablets and larger phones
+            document.querySelector(".doc").style.zoom = "1"; // Reset container zoom
+          } else {
+            iframe.style.height = "70vh";
+            iframe.style.minHeight = "400px";
+            document.querySelector(".doc").style.zoom = "1"; // Reset container zoom
+          }
+        }
+
+        // Initial iframe adjustment
+        if (iframe) {
+          adjustIframe();
+
+          // Adjust iframe on resize
+          window.addEventListener("resize", adjustIframe);
+
+          // Handle iframe load
+          iframe.addEventListener("load", function () {
+            adjustIframe();
+            // Ensure content is scrollable
+            if (this.contentWindow) {
+              this.contentWindow.document.body.style.overflow = "auto";
+            }
+          });
+        }
+      });
+    </script>
   </body>
 </html>
