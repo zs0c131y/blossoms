@@ -34,6 +34,7 @@ body {
   opacity: 1;
   transition: opacity 0.5s ease-out;
   overflow: hidden;
+  font-family: "Questrial", sans-serif;
 }
 
 .loading-screen.fade-out {
@@ -52,7 +53,7 @@ body {
   font-size: clamp(2.5rem, 5vw, 4rem);
   color: white;
   margin-bottom: 3rem;
-  font-family: "Georgia", serif;
+  font-family: "Headland One", serif;
 }
 
 .dates-container {

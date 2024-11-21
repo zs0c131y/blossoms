@@ -233,6 +233,16 @@ footer {
   margin-top: auto;
 }
 
+.divider-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 80px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), transparent);
+}
+
 footer p {
   margin: 0.5rem 0;
 }

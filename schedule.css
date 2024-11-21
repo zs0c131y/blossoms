@@ -166,6 +166,16 @@ footer {
   margin-top: auto;
 }
 
+.divider-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 80px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), transparent);
+}
+
 footer p {
   margin: 0.5rem 0;
   font-size: clamp(0.875rem, 2.5vw, 1rem);
@@ -202,7 +212,7 @@ footer p {
   @media screen and (max-width: 480px) {
     iframe {
       min-height: 300px;
-      height: 80vh;
+      height: 160vh !important;
       zoom: 0.58; /* Further reduce zoom for very small screens */
     }
   }
