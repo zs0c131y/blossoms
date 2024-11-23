@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const eventsList = document.querySelector(".events-list");
   const eventDetails = document.querySelector(".event-details");
 
+  // Get event parameter from URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const eventParam = urlParams.get("event");
+
   // Comprehensive Event Data
   const eventsData = {
     photography: {
@@ -153,6 +157,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  // Function to scroll to event details
+  function scrollToEvent(eventId) {
+    const eventElement = document.querySelector(`[data-event="${eventId}"]`);
+    if (eventElement) {
+      eventElement.scrollIntoView({ behavior: "smooth", block: "start" });
+      updateEventDetails(eventId);
+    }
+  }
+
   // Populate events list
   Object.keys(eventsData).forEach((eventId) => {
     const eventElement = document.createElement("div");
@@ -162,6 +175,18 @@ document.addEventListener("DOMContentLoaded", function () {
     eventElement.onclick = () => updateEventDetails(eventId);
     eventsList.appendChild(eventElement);
   });
+
+  // Handle URL parameter after populating events list
+  if (eventParam) {
+    // Small timeout to ensure DOM is ready
+    setTimeout(() => {
+      scrollToEvent(eventParam);
+    }, 100);
+  } else {
+    // Select first event by default if no parameter
+    const firstEventId = Object.keys(eventsData)[0];
+    updateEventDetails(firstEventId);
+  }
 
   // Mobile menu toggle
   mobileMenuBtn.addEventListener("click", function (e) {
@@ -208,6 +233,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Select first event by default
-  const firstEventId = Object.keys(eventsData)[0];
-  updateEventDetails(firstEventId);
+  // const firstEventId = Object.keys(eventsData)[0];
+  // updateEventDetails(firstEventId);
 });

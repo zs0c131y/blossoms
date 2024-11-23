@@ -40,14 +40,20 @@
     />
     <meta
       property="og:image"
-      content="https://blossomsbyc.netlify.app/assets/images/og-banner.jpg"
+      content="https://blossomsbyc.netlify.app/assets/images/og-banner.png"
     />
   </head>
   <body>
     <!-- Loading Screen -->
     <div class="loading-screen">
       <div class="loading-content">
-        <h1 class="loading-title">BLOSSOMS 2024-25</h1>
+        <!-- <h1 class="loading-title">BLOSSOMS 2024-25</h1> -->
+        <img
+          src="./assets/images/blossoms-logo.png"
+          alt="BLOSSOMS"
+          class="blossoms-logo-loading"
+          loading="eager"
+        />
         <div class="dates-container">
           <div class="date-section">
             <div class="date-title">Registrations Open</div>
@@ -99,12 +105,18 @@
           muted
           playsinline
           preload="metadata"
+          loading="eager"
           poster="assets/images/loader.jpg"
         >
           <source src="assets/videos/aftermovie.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <h1>BLOSSOMS</h1>
+        <img
+          src="./assets/images/blossoms-logo.png"
+          alt="BLOSSOMS"
+          class="blossoms-logo"
+          loading="eager"
+        />
         <p>
           Blossoms 2024-25 packs a surfeit of events which are simplified to be
           categorized in 4 themes: Stage, Theatre, Art and Literary Events.
@@ -115,42 +127,139 @@
         <div class="event-category">
           <h2>Stage Events</h2>
           <ul class="event-list">
-            <li><a href="events.html">Battle of Bands (Indian)</a></li>
-            <li><a href="events.html">Battle of Bands (Western)</a></li>
-            <li><a href="events.html">Mime</a></li>
-            <li><a href="events.html">Group Western Acapella</a></li>
-            <li><a href="events.html">Group Dance (Film/Folk)</a></li>
-            <li><a href="events.html">Solo Indian Dance (Classical)</a></li>
+            <li>
+              <a href="stage_events.html?event=battle-of-bands-western"
+                >Battle of Bands (Western)</a
+              >
+            </li>
+            <li>
+              <a href="stage_events.html?event=acapella-group"
+                >Acapella (Group)</a
+              >
+            </li>
+            <li>
+              <a href="stage_events.html?event=indian-group">Indian Group</a>
+            </li>
+            <li>
+              <a href="stage_events.html?event=solo"
+                >Indian Folk & Film Singing (Solo)</a
+              >
+            </li>
+            <li>
+              <a href="stage_events.html?event=western-solo"
+                >Western Singing (Solo)</a
+              >
+            </li>
+            <li>
+              <a href="stage_events.html?event=indian-classical-dance-solo"
+                >Indian Classical Dance (Solo)</a
+              >
+            </li>
+            <li>
+              <a href="stage_events.html?event=indian-dance-group-non-theme"
+                >Indian Dance Group: Non-Theme (Film/Folk)</a
+              >
+            </li>
+            <li><a href="stage_events.html?event=dance-duet">Dance Duet</a></li>
+            <li>
+              <a href="stage_events.html?event=folk-dance-duet"
+                >Folk Dance Duet</a
+              >
+            </li>
+            <li>
+              <a href="stage_events.html?event=indian-classical-dance-group"
+                >Indian Classical Dance (Group)</a
+              >
+            </li>
           </ul>
         </div>
 
         <div class="event-category">
           <h2>Theatre Events</h2>
           <ul class="event-list">
-            <li><a href="events.html">Proscenium</a></li>
-            <li><a href="events.html">Street Theatre</a></li>
+            <li>
+              <a href="theatre_events.html?event=mono-acting">Mono Acting</a>
+            </li>
+            <li>
+              <a href="theatre_events.html?event=street-theatre"
+                >Street Theatre</a
+              >
+            </li>
+            <li>
+              <a href="theatre_events.html?event=proscenium-theatre"
+                >Proscenium Theatre</a
+              >
+            </li>
+            <li><a href="theatre_events.html?event=mime">Mime</a></li>
+            <li>
+              <a href="theatre_events.html?event=short-film-making"
+                >Short Film Making</a
+              >
+            </li>
           </ul>
         </div>
 
         <div class="event-category">
           <h2>Art Events</h2>
           <ul class="event-list">
-            <li><a href="events.html">Cartooning</a></li>
-            <li><a href="events.html">Greeting Card Making</a></li>
-            <li><a href="events.html">Painting</a></li>
-            <li><a href="events.html">Pot Art</a></li>
-            <li><a href="events.html">Poster Making</a></li>
+            <li><a href="art_events.html?event=photography">Photography</a></li>
+            <li>
+              <a href="art_events.html?event=greeting-card-making"
+                >Greeting Card Making</a
+              >
+            </li>
+            <li>
+              <a href="art_events.html?event=pencil-sketching"
+                >Pencil Sketching</a
+              >
+            </li>
+            <li><a href="art_events.html?event=reel-making">Reel Making</a></li>
+            <li><a href="art_events.html?event=painting">Painting</a></li>
+            <li><a href="art_events.html?event=collage">Collage</a></li>
+            <li><a href="art_events.html?event=pot-art">Pot Art</a></li>
+            <li><a href="art_events.html?event=mehandi-art">Mehandi Art</a></li>
+            <li>
+              <a href="art_events.html?event=rangoli-design">Rangoli Design</a>
+            </li>
+            <li>
+              <a href="art_events.html?event=digital-poster-making"
+                >Digital Poster Making</a
+              >
+            </li>
           </ul>
         </div>
 
         <div class="event-category">
           <h2>Literary Events</h2>
           <ul class="event-list">
-            <li><a href="events.html">Extempore</a></li>
-            <li><a href="events.html">Dumb Charades</a></li>
-            <li><a href="events.html">Just-a-minute (JAM)</a></li>
-            <li><a href="events.html">The Quiz Whizz</a></li>
-            <li><a href="events.html">Pot Pourri</a></li>
+            <li><a href="literary_events.html?event=debate">Debate</a></li>
+            <li>
+              <a href="literary_events.html?event=extempore">Extempore</a>
+            </li>
+            <li>
+              <a href="literary_events.html?event=air-crash-ship-wreck"
+                >Air Crash / Ship Wreck</a
+              >
+            </li>
+            <li>
+              <a href="literary_events.html?event=dumb-charades"
+                >Dumb Charades</a
+              >
+            </li>
+            <li>
+              <a href="literary_events.html?event=pot-pourri">Pot Pourri</a>
+            </li>
+            <li>
+              <a href="literary_events.html?event=just-a-minute"
+                >Just A Minute (JAM)</a
+              >
+            </li>
+            <li>
+              <a href="literary_events.html?event=creative-writing"
+                >Creative Writing</a
+              >
+            </li>
+            <li><a href="literary_events.html?event=quiz">Quiz</a></li>
           </ul>
         </div>
       </div>
@@ -166,8 +275,11 @@
           </p>
           <p>or visit the SWO Office on 7th Floor, Block C.</p>
           <br />
+          <p>
+            Made with <span class="heart">❤</span> in CHRIST University,
+            Yeshwanthpur
+          </p>
           <p>Made by Adarsh Gupta & Shashwat</p>
-          <!-- <p>Made with <span class="heart">❤</span> in CHRIST BYC</p> -->
         </div>
       </footer>
     </div>

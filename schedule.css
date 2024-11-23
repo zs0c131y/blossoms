@@ -185,6 +185,13 @@ footer p {
   color: #ff0000;
 }
 
+.error {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding-top: 20px;
+}
+
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
   .doc {
@@ -206,6 +213,14 @@ footer p {
     position: relative;
     z-index: 1002;
     margin-left: 25px;
+  }
+
+  .error {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 20px;
+    font-size: 0.9rem;
   }
 
   /* Adjust for very small screens */

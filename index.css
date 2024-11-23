@@ -56,6 +56,16 @@ body {
   font-family: "Headland One", serif;
 }
 
+.blossoms-logo-loading {
+  max-width: 600px;
+  width: 90%;
+  height: auto;
+  margin: 20px auto 30px;
+  display: block;
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+  transition: transform 0.3s ease;
+}
+
 .dates-container {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
@@ -140,6 +150,20 @@ nav {
   transition: height 0.3s ease;
 }
 
+.blossoms-logo {
+  max-width: 600px;
+  width: 90%;
+  height: auto;
+  margin: 50px auto 50px;
+  display: block;
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.blossoms-logo:hover {
+  transform: scale(1.02);
+}
+
 .mobile-menu-btn {
   display: none;
   background: none;
@@ -191,6 +215,7 @@ nav {
   text-align: center;
   padding: 2rem;
   margin-top: 2rem;
+  position: relative;
 }
 
 .hero video {
@@ -346,6 +371,11 @@ footer p {
     height: 60px;
   }
 
+  .blossoms-logo {
+    max-width: 400px;
+    margin: -30px auto 20px;
+  }
+
   .nav-links {
     position: fixed;
     top: 0;
@@ -404,12 +434,17 @@ footer p {
     height: 45px;
   }
 
+  .blossoms-logo {
+    max-width: 300px;
+    margin: -20px auto 15px;
+  }
+
   .nav-links a {
     font-size: 1.1rem;
   }
 
   .loading-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 2rem;
   }
 
