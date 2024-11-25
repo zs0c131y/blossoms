@@ -6,6 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"
     />
+    <meta name="theme-color" content="transparent" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>Schedule - SWO</title>
     <link rel="stylesheet" href="schedule.css" />
@@ -13,6 +14,12 @@
       rel="shortcut icon"
       href="./assets/images/swo.png"
       type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Headland+One&family=Questrial&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
@@ -50,12 +57,38 @@
       <p class="subtitle">View the schedule of events!</p>
 
       <div class="doc">
-        <iframe
-          src="https://docs.google.com/document/d/e/2PACX-1vRpZbz3ufIKZcbyxSZy-0velzjcDGv6WmNSDIDSLkEn_EC72VrZ3SCVoUAeSe5D8P8JRpN5CG5CWDtz/pub?embedded=true"
-          title="Schedule Document"
-          scrolling="yes"
-          allowfullscreen="true"
-        ></iframe>
+        <div class="doc-container">
+          <style>
+            /* Inject critical styles directly */
+            #magazineViewport,
+            .magazine-viewport,
+            .container,
+            #canvas {
+              background: transparent !important;
+            }
+            .logo-backs, .logo-backs2, a[href="https://heyzine.com"], .controls-pdf
+            {
+              display: none !important;
+            }
+          </style>
+          <div
+            id="canvas"
+            style="background: transparent !important; padding: 0"
+          >
+            <iframe
+              src="https://heyzine.com/flip-book/3b26db88f8.html"
+              style="
+                width: 100%;
+                height: 100vh;
+                border: none;
+                background: transparent;
+              "
+              frameborder="0"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
       </div>
       <a
         href="https://docs.google.com/document/d/e/2PACX-1vRpZbz3ufIKZcbyxSZy-0velzjcDGv6WmNSDIDSLkEn_EC72VrZ3SCVoUAeSe5D8P8JRpN5CG5CWDtz/pub?embedded=true"

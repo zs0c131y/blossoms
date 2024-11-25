@@ -251,6 +251,7 @@ footer p {
   color: #ff0000;
 }
 
+/* Mobile Styles */
 @media (max-width: 768px) {
   .navbar {
     padding: 1rem;

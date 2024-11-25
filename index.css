@@ -183,14 +183,25 @@ nav {
 }
 
 .nav-links {
+  display: block;
+}
+
+.nav-links ul {
   display: flex;
   gap: 2rem;
+  list-style: none;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-links a {
   color: var(--primary-color);
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: all 0.3s ease;
@@ -356,24 +367,12 @@ footer p {
     padding: 0.5rem 1rem;
   }
 
-  .mobile-menu-btn {
-    display: block;
-    position: relative;
-    z-index: 1002;
-    margin-left: 25px;
-  }
-
   .logo {
     height: 70px;
   }
 
   .logo-cu {
     height: 60px;
-  }
-
-  .blossoms-logo {
-    max-width: 400px;
-    margin: -30px auto 20px;
   }
 
   .nav-links {
@@ -384,21 +383,48 @@ footer p {
     width: 70%;
     background: rgba(0, 0, 0, 0.95);
     transition: right 0.3s ease;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 80px 0;
+    z-index: 1000;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+    width: 200px;
+    text-align: center;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    position: relative;
+    z-index: 1002;
   }
 
   .nav-links.active {
     right: 0;
   }
 
-  .nav-links a {
-    font-size: 1.2rem;
-    width: auto;
-    text-align: center;
-    margin: 1rem 0;
+  /* .nav-links a.active {
+    background: var(--bg-transparent);
+  } */
+
+  .nav-links.active ul {
+    right: 0;
+  }
+  .blossoms-logo {
+    max-width: 400px;
+    margin: -30px auto 20px;
   }
 
   .mobile-menu-btn.active span:nth-child(1) {
