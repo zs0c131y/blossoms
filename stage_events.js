@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "battle-of-bands-western": {
-      title: "Battle of Bands (Western)",
+      title: "Battle of Bands (Western) - 8/01/25",
       rules: [
         "Time: 10+2 minutes (including setup and clearance time).",
         "In case of failure to adhere to the allotted time limit, output volumes will be cut and there would be deduction of points/minus extended (discretion of the judges).",
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "acapella-group": {
-      title: "Acapella (Group)",
+      title: "Acapella (Group) - 10/12/24",
       rules: [
         "Time: 10 + 2 mins (Entry to Exit Stage, Including setup).",
         "In case of failure to adhere to the allotted time limit, output volumes will be cut and there would be deduction of points/min (discretion of the judges).",
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "indian-group": {
-      title: "Indian Group",
+      title: "Indian Group Dance - 09/01/25  ",
       rules: [
         "Time: 10+2 minutes (including setup and clearance time).",
         "In case of failure to adhere to the allotted time limit, output volumes will be cut and there would be deduction of points/min (discretion of the judges).",
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "indian-solo": {
-      title: "Indian Folk and Film Singing (Solo)",
+      title: "Indian Folk and Film Singing (Solo) - 04/12/24",
       rules: [
         "Time limit: 4+1 mins.",
         "Only 1 accompanist allowed.",
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "western-solo": {
-      title: "Western Singing (Solo)",
+      title: "Western Singing (Solo) - 05/12/24",
       rules: [
         "Time limit: 4+1 mins.",
         "Best Original Composition will be awarded.",
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "indian-classical-dance-solo": {
-      title: "Indian Classical Dance Solo",
+      title: "Indian Classical Dance Solo - 06/12/24",
       rules: [
         "Time: 4+1 minutes on stage.",
         "Only authentic classical song to be used.",
@@ -103,23 +103,23 @@ document.addEventListener("DOMContentLoaded", function () {
         "Deaneries with more than 5 participants to send 3 finalists; deaneries with 3 to 5 participants to select only 2 finalists; deaneries with less than 3 participants to select only 1 finalist.",
       ],
     },
-    "indian-dance-group-non-theme": {
-      title: "Indian Dance Group: Non-Theme (Film/Folk)",
-      rules: [
-        "Time: 5+1 minutes on stage.",
-        "Fusion of songs is not allowed.",
-        "Songs should be only from Indian films, no remixes, no album songs.",
-        "Only Indian dance forms (including Bollywood, Contemporary) are allowed.",
-        "The songs must have lyrics.",
-        "Minimum 8 and maximum 15 members in a team.",
-        "Minimum props will be allowed.",
-        "No fire on stage, no vulgarity in costume, movements, or lyrics.",
-        "First 3 winning teams of the prelims to be selected for the finals.",
-        "Deaneries with more than 5 teams to send 3 finalist teams; deaneries with 3 to 5 teams to select only 2 finalists; deaneries with less than 3 teams to select only 1 finalist.",
-      ],
-    },
+    // "indian-dance-group-non-theme": {
+    //   title: "Indian Dance Group: Non-Theme (Film/Folk) - ",
+    //   rules: [
+    //     "Time: 5+1 minutes on stage.",
+    //     "Fusion of songs is not allowed.",
+    //     "Songs should be only from Indian films, no remixes, no album songs.",
+    //     "Only Indian dance forms (including Bollywood, Contemporary) are allowed.",
+    //     "The songs must have lyrics.",
+    //     "Minimum 8 and maximum 15 members in a team.",
+    //     "Minimum props will be allowed.",
+    //     "No fire on stage, no vulgarity in costume, movements, or lyrics.",
+    //     "First 3 winning teams of the prelims to be selected for the finals.",
+    //     "Deaneries with more than 5 teams to send 3 finalist teams; deaneries with 3 to 5 teams to select only 2 finalists; deaneries with less than 3 teams to select only 1 finalist.",
+    //   ],
+    // },
     "dance-duet": {
-      title: "Dance Duet",
+      title: "Dance Duet - 10/12/24",
       rules: [
         "Time: 2+1 minutes on stage.",
         "Team of 2.",
@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "folk-dance-duet": {
-      title: "Folk Dance Duet",
+      title: "Folk Dance Duet - 12/12/24",
       rules: [
         "Time: 4+1 minutes on stage.",
         "Only one song permitted, no mixing of songs.",
@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "indian-classical-dance-group": {
-      title: "Indian Classical Dance (Group)",
+      title: "Indian Classical Dance (Group) - 07/01/25",
       rules: [
         "Time: 6+1 minutes on stage.",
         "Minimum 4 members and a maximum of 8 members per team.",

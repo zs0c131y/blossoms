@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Comprehensive Event Data
   const eventsData = {
     photography: {
-      title: "Photography",
+      title: "Photography - 09/12/24",
       rules: [
         "Individual event.",
         "Themes will be announced 1 day prior to the date of the event, and photos must be in JPEG format only.",
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "greeting-card-making": {
-      title: "Greeting Card Making",
+      title: "Greeting Card Making - 06/12/24",
       rules: [
         "Individual event.",
         "White cardboard sheets will be provided.",
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "pencil-sketching": {
-      title: "Pencil Sketching",
+      title: "Pencil Sketching - 04/12/24",
       rules: [
         "Individual event.",
         "Only the following materials are allowed: pencils, charcoal, and erasers.",
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "reel-making": {
-      title: "Reel Making",
+      title: "Reel Making - 03/01/25",
       rules: [
         "Individual event.",
         "Maximum duration for the reel is 60 to 90 seconds.",
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     painting: {
-      title: "Painting",
+      title: "Painting - 12/12/24",
       rules: [
         "Individual event.",
         "Theme will be given on the spot.",
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     collage: {
-      title: "Collage",
+      title: "Collage - 03/12/24",
       rules: [
         "Team shall consist of four members.",
         "Theme for collage shall be given on the spot.",
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "pot-art": {
-      title: "Pot Art",
+      title: "Pot Art - 02/12/24",
       rules: [
         "Individual event.",
         "Theme will be given on the spot.",
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "mehandi-art": {
-      title: "Mehandi Art",
+      title: "Mehandi Art - 07/12/24",
       rules: [
         "Mehandi design should be creative and unique.",
         "Time: 1 hour 30 minutes.",
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "rangoli-design": {
-      title: "Rangoli Design",
+      title: "Rangoli Design - 03/12/24",
       rules: [
         "Team shall consist of four members.",
         "Theme will be given on the spot.",
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "digital-poster-making": {
-      title: "Digital Poster Making",
+      title: "Digital Poster Making - 11/12/24",
       rules: [
         "Individual event.",
         "Theme to be given on the spot.",

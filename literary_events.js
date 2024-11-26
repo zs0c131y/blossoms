@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Comprehensive Event Data
   const eventsData = {
     debate: {
-      title: "Debate",
+      title: "Debate (Prelims) - 04/12/24",
       rules: [
         "Individual event.",
         "Topics are announced a day before the event.",
@@ -21,10 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
         "Usage of notes will be as per judges' discretion.",
         "Participants should be prepared for both, for and against the motion.",
         "Rules for the Final round will be given at the judges' discretion.",
+        "Finals on 07/12/24",
       ],
     },
     extempore: {
-      title: "Extempore",
+      title: "Extempore - 03/01/25",
       rules: [
         "Individual event.",
         "A topic will be given on the spot, and the participant has to speak on the given topic.",
@@ -34,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "air-crash-ship-wreck": {
-      title: "Air Crash / Ship Wreck",
+      title: "Air Crash / Ship Wreck - 10/12/24",
       rules: [
         "Individual event.",
         "Participants are assigned a character at random and put in a situation depicting a crashing ship/plane.",
@@ -45,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "dumb-charades": {
-      title: "Dumb Charades",
+      title: "Dumb Charades - 07/12/24",
       rules: [
         "3 members per team (1 person to guess and 2 people to act, based on the team’s choice).",
         "Spelling, rhyming, splitting, codes, etc. are not allowed.",
@@ -54,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "pot-pourri": {
-      title: "Pot Pourri",
+      title: "Pot Pourri - 03/12/24",
       rules: [
         "3 members per team.",
         "The event will consist of multiple rounds, each focusing on different literary activities (examples of rounds include quizzes, spell bee, crosswords, heads up, extempore, turncoat, and more).",
@@ -64,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "just-a-minute": {
-      title: "Just A Minute",
+      title: "Just A Minute - 05/12/24",
       rules: [
         "Individual event.",
         "The event happens in multiple rounds and is based on elimination.",
@@ -75,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "creative-writing": {
-      title: "Creative Writing",
+      title: "Creative Writing - 02/12/24",
       rules: [
         "Individual participation.",
         "English is the only medium of language.",
@@ -86,13 +87,14 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     quiz: {
-      title: "Quiz",
+      title: "Quiz (Prelims) - 09/12/24",
       rules: [
         "Only team entries are allowed, and the team shall consist of three members.",
         "The decision of the quiz-master will be final and will not be subjected to any change.",
         "Participants shall not be allowed to use mobile or other electronic instruments during the quiz time.",
         "The questions shall be in the form of multiple choice, true/false statement, specific answer questions, etc., and the quizmaster will decide the rounds and the question format.",
         "Replacement of any participant of a team is not allowed after registration.",
+        "Finals on 11/12/24",
       ],
     },
   };

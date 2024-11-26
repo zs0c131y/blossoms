@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Event data
   const eventsData = {
     "mono-acting": {
-      title: "Mono Acting",
+      title: "Mono Acting - 09/12/24",
       rules: [
         "Duration: 3+1 minutes (including entry and exit).",
         "Language: English only.",
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "street-theatre": {
-      title: "Street Theatre",
+      title: "Street Theatre - 08/01/25",
       rules: [
         "Duration: 8+2 minutes (including entry/exit).",
         "Participants: Minimum 15 and Maximum 25.",
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "proscenium-theatre": {
-      title: "Proscenium Theatre",
+      title: "Proscenium Theatre - 11/01/25s",
       rules: [
         "Duration: 20 + 5 minutes (includes first stage setup and last stage clearance).",
         "Participants: Minimum 8 and Maximum of 25 – including backstage crew, lights, and production team. Minimum 6 actors must be involved.",
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     mime: {
-      title: "Mime",
+      title: "Mime - 06/01/25",
       rules: [
         "Duration: 7 + 1 mins (including stage entry and exit).",
         "Participants: Maximum 10 members per team including the painters, musicians, and console in charge. At any given time, minimum of 6 members should be on the stage.",
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "short-film-making": {
-      title: "Short Film Making",
+      title: "Short Film Making - 05/12/24",
       rules: [
         "Time: Minimum- 6 minutes, Maximum- 8 minutes (Intro and credits included).",
         "Participants: Minimum 5 members and Maximum 15 members per team including the camera person, video editors, directors, production team, etc.",
