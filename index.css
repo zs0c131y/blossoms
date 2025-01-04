@@ -427,6 +427,15 @@ footer p {
     margin: -30px auto 20px;
   }
 
+  .pdf-container {
+    height: 70vh;
+  }
+
+  .close-button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
   .mobile-menu-btn.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 6px);
   }
@@ -488,5 +497,90 @@ footer p {
 
   footer {
     padding: 1.5rem 1rem;
+  }
+}
+
+/* PDF Popup Styles */
+.pdf-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
+.pdf-popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pdf-container {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  height: 80vh;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border: 2px solid #111;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  z-index: 2001;
+  transition: all 0.3s ease;
+}
+
+.close-button:hover {
+  background: #111;
+  color: white;
+}
+
+.pdf-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Results Out Now - Phase 1 */
+.results-banner {
+  background: linear-gradient(135deg, #111, #111);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+  animation: pulse 2s infinite;
+}
+
+.results-text {
+  color: white;
+  font-weight: bold;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.05);
   }
 }

@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelector(".nav-links");
   const body = document.body;
 
-  // Loading screen logic
+  // Loading screen sequence
   setTimeout(() => {
     loadingScreen.classList.add("fade-out");
-    mainContent.classList.add("visible");
     setTimeout(() => {
       loadingScreen.style.display = "none";
+      mainContent.classList.add("visible");
     }, 500);
   }, 5000);
 

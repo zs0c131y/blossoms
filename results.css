@@ -1,0 +1,242 @@
+/* Results Page Specific Styles */
+body {
+  background: #111 url("./assets/images/index.bg.png") center/cover fixed;
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+  height: 110px;
+  width: auto;
+  transition: height 0.3s ease;
+}
+
+.logo-cu {
+  height: 100px;
+  width: auto;
+  transition: height 0.3s ease;
+}
+:root {
+  --primary-color: #ffffff;
+  --bg-transparent: rgba(255, 255, 255, 0.1);
+  --category-bg: rgba(128, 128, 128, 0.2);
+  --glow-color: rgba(255, 255, 255, 0.5);
+}
+
+.results-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* Leading Contenders Section */
+.leading-contenders {
+  background: var(--bg-transparent);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 3rem 2rem;
+  margin: 2rem auto 4rem;
+  max-width: 800px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.leading-contenders h2 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: "Headland One", serif;
+  text-transform: uppercase;
+}
+
+.contender-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.contender-item:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.contender-position {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  font-weight: bold;
+  min-width: 120px;
+}
+
+.contender-school {
+  flex-grow: 1;
+  color: white;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* Category Sections */
+.category-section {
+  margin-bottom: 6rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.category-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.category-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.category-header h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-family: "Headland One", serif;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.event-card {
+  background: var(--bg-transparent);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.event-title {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: "Headland One", serif;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.winners-list {
+  list-style: none;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.winner-item {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.winner-item:hover {
+  transform: scale(1.02);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.position {
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.winner-name {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.winner-school {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .logo {
+    height: 50px;
+  }
+
+  .logo-cu {
+    height: 45px;
+  }
+
+  .results-container {
+    padding: 0 1rem;
+  }
+
+  .event-card {
+    padding: 1.5rem;
+  }
+
+  .leading-contenders {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .leading-contenders h2 {
+    font-size: 2rem;
+  }
+
+  .contender-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .contender-position {
+    margin-bottom: 0.5rem;
+  }
+
+  .category-header h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

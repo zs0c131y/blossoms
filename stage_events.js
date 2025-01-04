@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "battle-of-bands-western": {
-      title: "Battle of Bands (Western) - 8/01/25",
+      title: "Battle of Bands (Western) - 08/01/25",
       rules: [
         "Time: 10+2 minutes (including setup and clearance time).",
         "In case of failure to adhere to the allotted time limit, output volumes will be cut and there would be deduction of points/minus extended (discretion of the judges).",
@@ -49,8 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "Clothing and grooming to be in University conduct.",
       ],
     },
-    "indian-group": {
-      title: "Indian Group Dance - 09/01/25  ",
+    "battle-of-bands-indian": {
+      title: "Battle of Bands (Indian) - 04/01/25  ",
       rules: [
         "Time: 10+2 minutes (including setup and clearance time).",
         "In case of failure to adhere to the allotted time limit, output volumes will be cut and there would be deduction of points/min (discretion of the judges).",
@@ -103,21 +103,21 @@ document.addEventListener("DOMContentLoaded", function () {
         "Deaneries with more than 5 participants to send 3 finalists; deaneries with 3 to 5 participants to select only 2 finalists; deaneries with less than 3 participants to select only 1 finalist.",
       ],
     },
-    // "indian-dance-group-non-theme": {
-    //   title: "Indian Dance Group: Non-Theme (Film/Folk) - ",
-    //   rules: [
-    //     "Time: 5+1 minutes on stage.",
-    //     "Fusion of songs is not allowed.",
-    //     "Songs should be only from Indian films, no remixes, no album songs.",
-    //     "Only Indian dance forms (including Bollywood, Contemporary) are allowed.",
-    //     "The songs must have lyrics.",
-    //     "Minimum 8 and maximum 15 members in a team.",
-    //     "Minimum props will be allowed.",
-    //     "No fire on stage, no vulgarity in costume, movements, or lyrics.",
-    //     "First 3 winning teams of the prelims to be selected for the finals.",
-    //     "Deaneries with more than 5 teams to send 3 finalist teams; deaneries with 3 to 5 teams to select only 2 finalists; deaneries with less than 3 teams to select only 1 finalist.",
-    //   ],
-    // },
+    "indian-dance-group-non-theme": {
+      title: "Indian Dance Group: Non-Theme (Film/Folk) - 09/01/25",
+      rules: [
+        "Time: 5+1 minutes on stage.",
+        "Fusion of songs is not allowed.",
+        "Songs should be only from Indian films, no remixes, no album songs.",
+        "Only Indian dance forms (including Bollywood, Contemporary) are allowed.",
+        "The songs must have lyrics.",
+        "Minimum 8 and maximum 15 members in a team.",
+        "Minimum props will be allowed.",
+        "No fire on stage, no vulgarity in costume, movements, or lyrics.",
+        "First 3 winning teams of the prelims to be selected for the finals.",
+        "Deaneries with more than 5 teams to send 3 finalist teams; deaneries with 3 to 5 teams to select only 2 finalists; deaneries with less than 3 teams to select only 1 finalist.",
+      ],
+    },
     "dance-duet": {
       title: "Dance Duet - 10/12/24",
       rules: [
