@@ -136,7 +136,7 @@ iframe {
   background: transparent !important;
 }
 
-/* Add this to hide Heyzine logo */
+
 iframe::after {
   content: none !important;
 }
