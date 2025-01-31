@@ -39,4 +39,4 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 🎓 **BCA, CHRIST (Deemed-to-be University), Bangalore (2022-2025)**  
 🔗 [GitHub](https://github.com/zs0c131y) | [LinkedIn](https://linkedin.com/in/adarshagupta/) | ✉️ [Email](mailto:adarsh.gupta@bca.christuniversity.in)
 
-Let the spirit of Blossoms shine! 🌟
+Let the spirit of Blossoms shine! BE THE BEST!!! 🌟
