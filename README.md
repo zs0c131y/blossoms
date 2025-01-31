@@ -32,11 +32,11 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 ## 📩 Contact
 👤 **Shashwat**  
-🎓 **BCA (Hons), Christ University, Bangalore**  
+🎓 **BCA (Hons), Christ University, Bangalore (2023-2027)**  
 🔗 [GitHub](https://github.com/Shashwat-19) | [LinkedIn](https://linkedin.com/in/shashwatk1956/) | ✉️ [Email](mailto:shashwat@bcah.christuniversity.in)
 
 👤 **Adarsh**  
-🎓 **BCA, CHRIST (Deemed-to-be University), Bangalore**  
+🎓 **BCA, CHRIST (Deemed-to-be University), Bangalore (2022-2025)**  
 🔗 [GitHub](https://github.com/zs0c131y) | [LinkedIn](https://linkedin.com/in/adarshagupta/) | ✉️ [Email](mailto:adarsh.gupta@bca.christuniversity.in)
 
 Let the spirit of Blossoms shine! 🌟
