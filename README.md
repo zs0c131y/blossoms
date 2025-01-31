@@ -33,6 +33,10 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 ## 📩 Contact
 👤 **Shashwat**  
 🎓 **BCA (Hons), Christ University, Bangalore**  
-🔗 [GitHub](#) | [LinkedIn](#) | ✉️ [Email](#)
+🔗 [GitHub](https://github.com/Shashwat-19) | [LinkedIn](https://linkedin.com/in/shashwatk1956/) | ✉️ [Email](mailto:shashwat@bcah.christuniversity.in)
+
+👤 **Adarsh**  
+🎓 **BCA, CHRIST (Deemed-to-be University), Bangalore**  
+🔗 [GitHub](https://github.com/zs0c131y) | [LinkedIn](https://linkedin.com/in/adarshagupta/) | ✉️ [Email](mailto:adarsh.gupta@bca.christuniversity.in)
 
 Let the spirit of Blossoms shine! 🌟
