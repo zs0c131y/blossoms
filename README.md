@@ -3,7 +3,7 @@
 Welcome to the official Blossoms Website – a dedicated platform for Christ University's Blossoms event! This website showcases the spirit of competition, creativity, and celebration among various schools vying for the prestigious Blossoms Trophy.
 
 ## 📌 Live Website
-[🔗 Visit Blossoms Website](#)
+[🔗 Visit Blossoms Website](https://blossoms.netlify.app)
 
 ## ✨ Features
 ✅ **Event Overview** – Get all the details about Blossoms, including themes and schedules.  
