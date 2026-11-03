@@ -1,0 +1,89 @@
+.event-handbook {
+  margin-top: 70px;
+  scroll-margin-top: 24px;
+}
+.event-handbook h2 {
+  font-size: clamp(24px, 3vw, 36px);
+  letter-spacing: -0.04em;
+  margin: 12px 0;
+}
+.event-handbook > p {
+  font-size: 13px;
+  color: #aaa3af;
+  margin-bottom: 26px;
+}
+.event-handbook details {
+  border-bottom: 1px solid #c9b69830;
+  scroll-margin-top: 24px;
+}
+.event-handbook summary {
+  padding: 19px 6px;
+  font-size: 14px;
+  color: #e6d6b1;
+  cursor: pointer;
+}
+.event-handbook summary:hover {
+  color: #fff1ca;
+}
+.event-handbook .event-rules {
+  margin: 0 0 28px;
+  max-width: 900px;
+}
+.schedule-archive-note {
+  color: #aaa3af;
+  font-size: 13px;
+  line-height: 1.9;
+  max-width: 850px;
+  margin: 0 0 24px;
+}
+/* Space atmosphere shared across all eight pages. */
+.space-theme {
+  position: relative;
+  isolation: isolate;
+  background: #070914;
+}
+.space-theme::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+  z-index: -2;
+  pointer-events: none;
+  opacity: 0.85;
+  background:
+    radial-gradient(ellipse at 12% 25%, #234a7a26, transparent 55%),
+    radial-gradient(ellipse at 87% 70%, #65357521, transparent 53%),
+    linear-gradient(#070914e8, #070914ed),
+    url("../assets/images/index.bg.webp") center/cover no-repeat;
+}
+.space-theme #starfield {
+  opacity: 0.75;
+}
+.space-theme .festival-cover {
+  background: #070914;
+}
+.space-theme .festival-cover::after {
+  background: radial-gradient(
+    ellipse at center,
+    #090d1d0d 10%,
+    #0c102724 45%,
+    #070914cc 100%
+  );
+}
+/* AOS attributes are added only after the library is available. */
+[data-aos="fade-up"] {
+  transform: translate3d(0, 20px, 0);
+}
+[data-aos="fade-up"].aos-animate {
+  transform: none;
+}
+.category-card[data-aos].aos-animate:hover {
+  transform: translateY(-3px);
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

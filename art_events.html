@@ -1,87 +1,486 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Art Events - BLOSSOMS 2024-25</title>
-    <link rel="stylesheet" href="./css/art_events.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090810" />
+    <link rel="icon" href="assets/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/swo.png"
-      type="image/x-icon"
+    <link rel="stylesheet" href="./cssfile/secondary.css" />
+    <link rel="stylesheet" href="cssfile/navigation.css" />
+    <link rel="stylesheet" href="assets/vendor/aos/aos.css" />
+    <link rel="stylesheet" href="cssfile/motion.css" />
+    <script src="jsfile/site.js" defer></script>
+    <script src="assets/vendor/aos/aos.js" defer></script>
+    <script src="jsfile/motion.js" defer></script>
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+    <!-- SEO:START -->
+    <title>Art Events &amp; Rules | BLOSSOMS 2024–25, CHRIST</title>
+    <meta
+      name="description"
+      content="Explore Blossoms 2024–25 art event rules for photography, painting, sketching, digital posters and more at CHRIST University Yeshwanthpur Campus."
     />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link
+      rel="canonical"
+      href="https://blossomsbyc.netlify.app/art_events.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BLOSSOMS 2024–25" />
+    <meta property="og:locale" content="en_IN" />
+    <meta
+      property="og:title"
+      content="Art Events &amp; Rules | BLOSSOMS 2024–25, CHRIST"
+    />
+    <meta
+      property="og:description"
+      content="Explore Blossoms 2024–25 art event rules for photography, painting, sketching, digital posters and more at CHRIST University Yeshwanthpur Campus."
+    />
+    <meta
+      property="og:url"
+      content="https://blossomsbyc.netlify.app/art_events.html"
+    />
+    <meta
+      property="og:image"
+      content="https://blossomsbyc.netlify.app/assets/images/og-banner.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Blossoms 2024–25 at CHRIST University, Bengaluru Yeshwanthpur Campus"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Art Events &amp; Rules | BLOSSOMS 2024–25, CHRIST"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore Blossoms 2024–25 art event rules for photography, painting, sketching, digital posters and more at CHRIST University Yeshwanthpur Campus."
+    />
+    <meta
+      name="twitter:image"
+      content="https://blossomsbyc.netlify.app/assets/images/og-banner.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Blossoms 2024–25 cultural festival"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://blossomsbyc.netlify.app/#organizer",
+            "name": "Student Welfare Office, CHRIST University, Bengaluru Yeshwanthpur Campus",
+            "url": "https://blossomsbyc.netlify.app/",
+            "logo": "https://blossomsbyc.netlify.app/assets/images/swo-logo-tp.png",
+            "email": "swo.yeshwanthpur@christuniversity.in",
+            "parentOrganization": {
+              "@type": "CollegeOrUniversity",
+              "name": "CHRIST (Deemed to be University)",
+              "url": "https://christuniversity.in/"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://blossomsbyc.netlify.app/#website",
+            "url": "https://blossomsbyc.netlify.app/",
+            "name": "BLOSSOMS 2024–25",
+            "inLanguage": "en-IN",
+            "publisher": { "@id": "https://blossomsbyc.netlify.app/#organizer" }
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://blossomsbyc.netlify.app/art_events.html#webpage",
+            "url": "https://blossomsbyc.netlify.app/art_events.html",
+            "name": "Art Events & Rules | BLOSSOMS 2024–25, CHRIST",
+            "description": "Explore Blossoms 2024–25 art event rules for photography, painting, sketching, digital posters and more at CHRIST University Yeshwanthpur Campus.",
+            "inLanguage": "en-IN",
+            "isPartOf": { "@id": "https://blossomsbyc.netlify.app/#website" },
+            "breadcrumb": {
+              "@id": "https://blossomsbyc.netlify.app/art_events.html#breadcrumbs"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://blossomsbyc.netlify.app/assets/images/og-banner.png",
+              "width": 1200,
+              "height": 630
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://blossomsbyc.netlify.app/art_events.html#breadcrumbs",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://blossomsbyc.netlify.app/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Events",
+                "item": "https://blossomsbyc.netlify.app/events.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Art events",
+                "item": "https://blossomsbyc.netlify.app/art_events.html"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <!-- SEO:END -->
   </head>
-  <body>
-    <nav class="navbar">
-      <img src="./assets/images/swo-logo-tp.png" alt="SWO Logo" class="logo" />
-
-      <button class="mobile-menu-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="events.html" class="active">Events</a>
-        <a href="schedule.html">Schedule</a>
-        <li><a href="results.html">Results</a></li>
-        <!-- <a href="#gallery">Gallery</a> -->
+  <body class="space-theme">
+    <a class="skip-link" href="#main">Skip to content</a
+    ><canvas id="starfield" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a
+          href="index.html"
+          class="institution swo-identity"
+          aria-label="Blossoms home, Student Welfare Office"
+          ><img
+            src="assets/images/swo-logo-tp.png"
+            alt="Student Welfare Office, Bangalore Yeshwanthpur Campus"
+            width="96"
+            height="66"
+        /></a>
+        <button
+          class="menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span></span><span></span>
+        </button>
+        <div class="site-links" id="main-nav">
+          <a href="index.html">Home</a
+          ><a href="events.html" aria-current="page">Events</a
+          ><a href="schedule.html">Schedule</a
+          ><a href="results.html">Results </a>
+        </div>
+        <a
+          href="https://christuniversity.in/"
+          class="institution christ-identity"
+          aria-label="CHRIST, Deemed to be University"
+          ><img
+            src="assets/images/cu-logo-tp.png"
+            alt="CHRIST, Deemed to be University, Bangalore India"
+            width="177"
+            height="66"
+        /></a>
+      </nav>
+    </header>
+    <main id="main" class="page-shell">
+      <a class="back-link" href="events.html"> All categories</a>
+      <div class="page-intro compact">
+        <div>
+          <p class="eyebrow">
+            <span aria-hidden="true">&#10022;</span> EXPLORE THE LINEUP
+          </p>
+          <h1>Art <em>events.</em></h1>
+        </div>
+        <p class="intro-copy">
+          Choose an event to explore its rules and details.
+        </p>
       </div>
-
-      <img
-        src="./assets/images/cu-logo-tp.png"
-        alt="CHRIST Logo"
-        class="logo logo-cu"
-      />
-    </nav>
-
-    <div class="main-content">
-      <!-- Events list will be populated by JavaScript -->
-      <div class="events-list"></div>
-
-      <!-- Event details will be updated by JavaScript -->
-      <div class="event-details"></div>
-    </div>
-
-    <footer>
-      <div class="footer-content">
-        <div class="divider-line"></div>
-        <p>
-          In case of queries, please drop a mail to
-          swo.yeshwanthpur@christuniversity.in
-        </p>
-        <p>or visit the SWO Office on 7th Floor, Block C.</p>
-        <br />
-        <p>
-          Made with <span class="heart">❤</span> in CHRIST University,
-          Yeshwanthpur
-        </p>
-        <p>
-          Made by
-          <a
-            href="https://www.linkedin.com/in/adarshagupta/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="color: inherit; text-decoration: underline"
-            >Adarsh Gupta</a
+      <div class="section-bar">
+        <span>SELECT AN EVENT</span><span>BLOSSOMS 2024&ndash;25</span>
+      </div>
+      <div class="main-content">
+        <!-- EVENT-LIST:START -->
+        <div class="events-list" aria-label="Art events">
+          <a class="event-item" href="#rule-photography"
+            >Photography - 09/12/24</a
+          ><a class="event-item" href="#rule-greeting-card-making"
+            >Greeting Card Making - 06/12/24</a
+          ><a class="event-item" href="#rule-pencil-sketching"
+            >Pencil Sketching - 04/12/24</a
+          ><a class="event-item" href="#rule-reel-making"
+            >Reel Making - 03/01/25</a
+          ><a class="event-item" href="#rule-painting">Painting - 12/12/24</a
+          ><a class="event-item" href="#rule-collage">Collage - 03/12/24</a
+          ><a class="event-item" href="#rule-pot-art">Pot Art - 02/12/24</a
+          ><a class="event-item" href="#rule-mehandi-art"
+            >Mehandi Art - 07/12/24</a
+          ><a class="event-item" href="#rule-rangoli-design"
+            >Rangoli Design - 03/12/24</a
+          ><a class="event-item" href="#rule-digital-poster-making"
+            >Digital Poster Making - 11/12/24</a
           >
-          &
-          <a
-            href="https://www.linkedin.com/in/shashwatk1956/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="color: inherit; text-decoration: underline"
+        </div>
+        <!-- EVENT-LIST:END -->
+        <!-- EVENT-DETAILS:START -->
+        <div class="event-details" aria-live="polite">
+          <h2 class="event-title">Photography - 09/12/24</h2>
+          <ul class="event-rules">
+            <li>Individual event.</li>
+            <li>
+              Themes will be announced 1 day prior to the date of the event, and
+              photos must be in JPEG format only.
+            </li>
+            <li>Each student should submit 2 photos.</li>
+            <li>
+              Basic editing such as cropping of the photos and color correction
+              can be done, but any editing that affects the genuineness of the
+              photos will be directly disqualified. Advanced editing is
+              prohibited.
+            </li>
+            <li>Only DSLR photos are allowed.</li>
+            <li>
+              The participants are supposed to present and explain their photos
+              to the judges.
+            </li>
+          </ul>
+        </div>
+        <!-- EVENT-DETAILS:END -->
+      </div>
+      <!-- EVENT-HANDBOOK:START -->
+      <section class="event-handbook" aria-labelledby="handbook-title">
+        <div class="section-bar">
+          <span>THE COMPLETE RULEBOOK</span><span>10 ENTRIES</span>
+        </div>
+        <h2 id="handbook-title">Art events: all rules</h2>
+        <p>
+          Browse every event below, or use the selector above to focus on one
+          event.
+        </p>
+        <details id="rule-photography">
+          <summary>Photography - 09/12/24</summary>
+          <ul class="event-rules">
+            <li>Individual event.</li>
+            <li>
+              Themes will be announced 1 day prior to the date of the event, and
+              photos must be in JPEG format only.
+            </li>
+            <li>Each student should submit 2 photos.</li>
+            <li>
+              Basic editing such as cropping of the photos and color correction
+              can be done, but any editing that affects the genuineness of the
+              photos will be directly disqualified. Advanced editing is
+              prohibited.
+            </li>
+            <li>Only DSLR photos are allowed.</li>
+            <li>
+              The participants are supposed to present and explain their photos
+              to the judges.
+            </li>
+          </ul>
+        </details>
+        <details id="rule-greeting-card-making">
+          <summary>Greeting Card Making - 06/12/24</summary>
+          <ul class="event-rules">
+            <li>Individual event.</li>
+            <li>White cardboard sheets will be provided.</li>
+            <li>Stationery to be brought by the participants.</li>
+            <li>Theme will be given on the spot.</li>
+            <li>Time: 1 hour 30 minutes.</li>
+          </ul>
+        </details>
+        <details id="rule-pencil-sketching">
+          <summary>Pencil Sketching - 04/12/24</summary>
+          <ul class="event-rules">
+            <li>Individual event.</li>
+            <li>
+              Only the following materials are allowed: pencils, charcoal, and
+              erasers.
+            </li>
+            <li>No color media (e.g., markers, paints) to be used.</li>
+            <li>Participants must bring their own sketching supplies.</li>
+            <li>Sketching paper will be provided to the participants.</li>
+            <li>There will be a prompt given as a topic.</li>
+            <li>Time limit: 1 hour 30 minutes.</li>
+          </ul>
+        </details>
+        <details id="rule-reel-making">
+          <summary>Reel Making - 03/01/25</summary>
+          <ul class="event-rules">
+            <li>Individual event.</li>
+            <li>Maximum duration for the reel is 60 to 90 seconds.</li>
+            <li>
+              Explicit or vulgar content won&#39;t be entertained and accepted.
+            </li>
+            <li>Plagiarized work will be rejected.</li>
+            <li>Topic will be given 1 day prior to the event.</li>
+            <li>
+              Only mobile phones to be used for reel making and only basic
+              editing allowed. Voiceovers are allowed with BGM.
+            </li>
+            <li>
+              No VFX effects will be allowed and stock footage will not be
+              allowed.
+            </li>
+            <li>Shoot to be done only inside the campus.</li>
+          </ul>
+        </details>
+        <details id="rule-painting">
+          <summary>Painting - 12/12/24</summary>
+          <ul class="event-rules">
+            <li>Individual event.</li>
+            <li>Theme will be given on the spot.</li>
+            <li>Any kind of paints are allowed to be used.</li>
+            <li>Time: 1 hour 30 minutes.</li>
+            <li>
+              The painting should be original and have not been published
+              elsewhere.
+            </li>
+            <li>
+              The participants will carry their own water bottle, drawing and
+              painting material, and rough cloth for cleaning.
+            </li>
+            <li>Painting sheets will be provided.</li>
+          </ul>
+        </details>
+        <details id="rule-collage">
+          <summary>Collage - 03/12/24</summary>
+          <ul class="event-rules">
+            <li>Team shall consist of four members.</li>
+            <li>Theme for collage shall be given on the spot.</li>
+            <li>Time limit for collage making shall be 1 hour 30 minutes.</li>
+            <li>
+              No mobile or internet means would be allowed to use at the time of
+              competition.
+            </li>
+            <li>
+              Chart papers will be provided to the participants in the finals,
+              and other materials must be brought by the participants.
+            </li>
+            <li>
+              Paper, magazines, glue, scissors, sketch pens/colors, etc. to be
+              brought by participants.
+            </li>
+          </ul>
+        </details>
+        <details id="rule-pot-art">
+          <summary>Pot Art - 02/12/24</summary>
+          <ul class="event-rules">
+            <li>Individual event.</li>
+            <li>Theme will be given on the spot.</li>
+            <li>
+              Use of glitter, mirror pieces, plaster of Paris, chalk powder,
+              hammer chisels, and other sharp instruments are not allowed.
+            </li>
+            <li>Time: 1 hour 30 minutes.</li>
+            <li>Pots will be provided.</li>
+          </ul>
+        </details>
+        <details id="rule-mehandi-art">
+          <summary>Mehandi Art - 07/12/24</summary>
+          <ul class="event-rules">
+            <li>Mehandi design should be creative and unique.</li>
+            <li>Time: 1 hour 30 minutes.</li>
+            <li>
+              Mehandi design should be portrayed on one hand till the wrist.
+            </li>
+            <li>
+              Participants need to bring their own materials (Mehndi cones &amp;
+              other materials).
+            </li>
+            <li>
+              A team must have 2 participants: one artist and the other is the
+              subject (Model).
+            </li>
+            <li>
+              Mehndi tattoo designs that mimic tattoos (stickers) are not
+              allowed.
+            </li>
+          </ul>
+        </details>
+        <details id="rule-rangoli-design">
+          <summary>Rangoli Design - 03/12/24</summary>
+          <ul class="event-rules">
+            <li>Team shall consist of four members.</li>
+            <li>Theme will be given on the spot.</li>
+            <li>Time: 1 hour 30 minutes.</li>
+            <li>
+              Participants must bring their own colored powders for the
+              competition.
+            </li>
+            <li>
+              Pre-drawn outlines, stencils, or use of adhesives are strictly
+              prohibited, and only natural or traditional Rangoli colors are
+              allowed. Use of synthetic colors is not permitted.
+            </li>
+            <li>
+              No additional decorations like lights, stickers, or objects should
+              be used unless specified.
+            </li>
+            <li>Each team will be assigned a specific area to work.</li>
+            <li>
+              Participants are expected to maintain cleanliness at their
+              workstation during and after the event.
+            </li>
+            <li>Rangoli sheet (black cardboard) will be provided.</li>
+          </ul>
+        </details>
+        <details id="rule-digital-poster-making">
+          <summary>Digital Poster Making - 11/12/24</summary>
+          <ul class="event-rules">
+            <li>Individual event.</li>
+            <li>Theme to be given on the spot.</li>
+            <li>Time: 1 hour 30 minutes.</li>
+            <li>
+              Participants may use any editing software as instructed in schools
+              (Adobe Photoshop, Canva, Paint, Microsoft PowerPoint, etc.).
+            </li>
+            <li>
+              The size of the poster must only be in A4 size (8.27” x 11.69”) in
+              portrait format.
+            </li>
+            <li>
+              The posters are governed by laws and regulations concerning
+              intellectual property. Participants are strictly advised to submit
+              an original work and avoid using elements that could subject it to
+              copyright infringement.
+            </li>
+            <li>Usage of AI tools for poster creation is prohibited.</li>
+          </ul>
+        </details>
+      </section>
+      <!-- EVENT-HANDBOOK:END -->
+    </main>
+    <footer class="site-footer">
+      <div>
+        <a class="footer-brand" href="index.html"
+          ><img src="./assets/images/blossoms-logo.png" alt="BLOSSOMS"
+        /></a>
+        <p>CHRIST University, Bengaluru<br />Yeshwanthpur Campus</p>
+      </div>
+      <div>
+        <span class="eyebrow">GET IN TOUCH</span>
+        <p>
+          Questions? Write to
+          <a href="mailto:swo.yeshwanthpur@christuniversity.in"
+            >swo.yeshwanthpur@christuniversity.in</a
+          ><br />or visit the SWO Office, 7th Floor, Block C.
+        </p>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; BLOSSOMS 2024&ndash;25</span
+        ><span
+          >Made by
+          <a href="https://www.linkedin.com/in/adarshagupta/">Adarsh Gupta</a>
+          &amp;
+          <a href="https://www.linkedin.com/in/shashwatk1956/"
             >Shashwat</a
-          >
-        </p>
+          ></span
+        >
       </div>
     </footer>
-
     <script src="./jsfile/art_events.js"></script>
   </body>
 </html>

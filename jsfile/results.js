@@ -312,7 +312,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
                 <div class="winner-school">${winner.school}</div>
               </li>
-            `
+            `,
               )
               .join("")}
           </ul>
@@ -330,7 +330,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="contender-position">${contender.position} Position</div>
           <div class="contender-school">${contender.school}</div>
         </div>
-      `
+      `,
       )
       .join("");
   }
@@ -359,32 +359,10 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       threshold: 0.1,
-    }
+    },
   );
 
   document.querySelectorAll(".fade-in").forEach((element) => {
     observer.observe(element);
   });
-
-  // Mobile menu functionality
-  const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
-  const navLinks = document.querySelector(".nav-links");
-  const body = document.body;
-
-  if (mobileMenuBtn && navLinks) {
-    mobileMenuBtn.addEventListener("click", function (e) {
-      e.stopPropagation();
-      this.classList.toggle("active");
-      navLinks.classList.toggle("active");
-      body.style.overflow = this.classList.contains("active") ? "hidden" : "";
-    });
-
-    document.addEventListener("click", function (e) {
-      if (!mobileMenuBtn.contains(e.target) && !navLinks.contains(e.target)) {
-        mobileMenuBtn.classList.remove("active");
-        navLinks.classList.remove("active");
-        body.style.overflow = "";
-      }
-    });
-  }
 });

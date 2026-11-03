@@ -1,87 +1,542 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stage Events - BLOSSOMS 2024-25</title>
-    <link rel="stylesheet" href="./css/stage_events.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090810" />
+    <link rel="icon" href="assets/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/swo.png"
-      type="image/x-icon"
+    <link rel="stylesheet" href="./cssfile/secondary.css" />
+    <link rel="stylesheet" href="cssfile/navigation.css" />
+    <link rel="stylesheet" href="assets/vendor/aos/aos.css" />
+    <link rel="stylesheet" href="cssfile/motion.css" />
+    <script src="jsfile/site.js" defer></script>
+    <script src="assets/vendor/aos/aos.js" defer></script>
+    <script src="jsfile/motion.js" defer></script>
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+    <!-- SEO:START -->
+    <title>Stage Events &amp; Rules | BLOSSOMS 2024–25, CHRIST</title>
+    <meta
+      name="description"
+      content="Read Blossoms 2024–25 stage event rules for music, dance, solo singing and Battle of Bands at CHRIST University, Bengaluru Yeshwanthpur Campus."
     />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link
+      rel="canonical"
+      href="https://blossomsbyc.netlify.app/stage_events.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BLOSSOMS 2024–25" />
+    <meta property="og:locale" content="en_IN" />
+    <meta
+      property="og:title"
+      content="Stage Events &amp; Rules | BLOSSOMS 2024–25, CHRIST"
+    />
+    <meta
+      property="og:description"
+      content="Read Blossoms 2024–25 stage event rules for music, dance, solo singing and Battle of Bands at CHRIST University, Bengaluru Yeshwanthpur Campus."
+    />
+    <meta
+      property="og:url"
+      content="https://blossomsbyc.netlify.app/stage_events.html"
+    />
+    <meta
+      property="og:image"
+      content="https://blossomsbyc.netlify.app/assets/images/og-banner.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Blossoms 2024–25 at CHRIST University, Bengaluru Yeshwanthpur Campus"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Stage Events &amp; Rules | BLOSSOMS 2024–25, CHRIST"
+    />
+    <meta
+      name="twitter:description"
+      content="Read Blossoms 2024–25 stage event rules for music, dance, solo singing and Battle of Bands at CHRIST University, Bengaluru Yeshwanthpur Campus."
+    />
+    <meta
+      name="twitter:image"
+      content="https://blossomsbyc.netlify.app/assets/images/og-banner.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Blossoms 2024–25 cultural festival"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://blossomsbyc.netlify.app/#organizer",
+            "name": "Student Welfare Office, CHRIST University, Bengaluru Yeshwanthpur Campus",
+            "url": "https://blossomsbyc.netlify.app/",
+            "logo": "https://blossomsbyc.netlify.app/assets/images/swo-logo-tp.png",
+            "email": "swo.yeshwanthpur@christuniversity.in",
+            "parentOrganization": {
+              "@type": "CollegeOrUniversity",
+              "name": "CHRIST (Deemed to be University)",
+              "url": "https://christuniversity.in/"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://blossomsbyc.netlify.app/#website",
+            "url": "https://blossomsbyc.netlify.app/",
+            "name": "BLOSSOMS 2024–25",
+            "inLanguage": "en-IN",
+            "publisher": { "@id": "https://blossomsbyc.netlify.app/#organizer" }
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://blossomsbyc.netlify.app/stage_events.html#webpage",
+            "url": "https://blossomsbyc.netlify.app/stage_events.html",
+            "name": "Stage Events & Rules | BLOSSOMS 2024–25, CHRIST",
+            "description": "Read Blossoms 2024–25 stage event rules for music, dance, solo singing and Battle of Bands at CHRIST University, Bengaluru Yeshwanthpur Campus.",
+            "inLanguage": "en-IN",
+            "isPartOf": { "@id": "https://blossomsbyc.netlify.app/#website" },
+            "breadcrumb": {
+              "@id": "https://blossomsbyc.netlify.app/stage_events.html#breadcrumbs"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://blossomsbyc.netlify.app/assets/images/og-banner.png",
+              "width": 1200,
+              "height": 630
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://blossomsbyc.netlify.app/stage_events.html#breadcrumbs",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://blossomsbyc.netlify.app/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Events",
+                "item": "https://blossomsbyc.netlify.app/events.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Stage events",
+                "item": "https://blossomsbyc.netlify.app/stage_events.html"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <!-- SEO:END -->
   </head>
-  <body>
-    <nav class="navbar">
-      <img src="./assets/images/swo-logo-tp.png" alt="SWO Logo" class="logo" />
-
-      <button class="mobile-menu-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="events.html" class="active">Events</a>
-        <a href="schedule.html">Schedule</a>
-        <li><a href="results.html">Results</a></li>
-        <!-- <a href="#gallery">Gallery</a> -->
+  <body class="space-theme">
+    <a class="skip-link" href="#main">Skip to content</a
+    ><canvas id="starfield" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a
+          href="index.html"
+          class="institution swo-identity"
+          aria-label="Blossoms home, Student Welfare Office"
+          ><img
+            src="assets/images/swo-logo-tp.png"
+            alt="Student Welfare Office, Bangalore Yeshwanthpur Campus"
+            width="96"
+            height="66"
+        /></a>
+        <button
+          class="menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span></span><span></span>
+        </button>
+        <div class="site-links" id="main-nav">
+          <a href="index.html">Home</a
+          ><a href="events.html" aria-current="page">Events</a
+          ><a href="schedule.html">Schedule</a
+          ><a href="results.html">Results </a>
+        </div>
+        <a
+          href="https://christuniversity.in/"
+          class="institution christ-identity"
+          aria-label="CHRIST, Deemed to be University"
+          ><img
+            src="assets/images/cu-logo-tp.png"
+            alt="CHRIST, Deemed to be University, Bangalore India"
+            width="177"
+            height="66"
+        /></a>
+      </nav>
+    </header>
+    <main id="main" class="page-shell">
+      <a class="back-link" href="events.html"> All categories</a>
+      <div class="page-intro compact">
+        <div>
+          <p class="eyebrow">
+            <span aria-hidden="true">&#10022;</span> EXPLORE THE LINEUP
+          </p>
+          <h1>Stage <em>events.</em></h1>
+        </div>
+        <p class="intro-copy">
+          Choose an event to explore its rules and details.
+        </p>
       </div>
-
-      <img
-        src="./assets/images/cu-logo-tp.png"
-        alt="CHRIST Logo"
-        class="logo logo-cu"
-      />
-    </nav>
-
-    <div class="main-content">
-      <!-- Events list will be populated by JavaScript -->
-      <div class="events-list"></div>
-
-      <!-- Event details will be updated by JavaScript -->
-      <div class="event-details"></div>
-    </div>
-
-    <footer>
-      <div class="footer-content">
-        <div class="divider-line"></div>
-        <p>
-          In case of queries, please drop a mail to
-          swo.yeshwanthpur@christuniversity.in
-        </p>
-        <p>or visit the SWO Office on 7th Floor, Block C.</p>
-        <br />
-        <p>
-          Made with <span class="heart">❤</span> in CHRIST University,
-          Yeshwanthpur
-        </p>
-        <p>
-          Made by
-          <a
-            href="https://www.linkedin.com/in/adarshagupta/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="color: inherit; text-decoration: underline"
-            >Adarsh Gupta</a
+      <div class="section-bar">
+        <span>SELECT AN EVENT</span><span>BLOSSOMS 2024&ndash;25</span>
+      </div>
+      <div class="main-content">
+        <!-- EVENT-LIST:START -->
+        <div class="events-list" aria-label="Stage events">
+          <a class="event-item" href="#rule-general-solo-music"
+            >General Rules for Solo Music Events</a
+          ><a class="event-item" href="#rule-battle-of-bands-western"
+            >Battle of Bands (Western) - 08/01/25</a
+          ><a class="event-item" href="#rule-acapella-group"
+            >Acapella (Group) - 10/12/24</a
+          ><a class="event-item" href="#rule-battle-of-bands-indian"
+            >Battle of Bands (Indian) - 04/01/25 </a
+          ><a class="event-item" href="#rule-indian-solo"
+            >Indian Folk and Film Singing (Solo) - 04/12/24</a
+          ><a class="event-item" href="#rule-western-solo"
+            >Western Singing (Solo) - 05/12/24</a
+          ><a class="event-item" href="#rule-indian-classical-dance-solo"
+            >Indian Classical Dance Solo - 06/12/24</a
+          ><a class="event-item" href="#rule-indian-dance-group-non-theme"
+            >Indian Dance Group: Non-Theme (Film/Folk) - 09/01/25</a
+          ><a class="event-item" href="#rule-dance-duet"
+            >Dance Duet - 10/12/24</a
+          ><a class="event-item" href="#rule-folk-dance-duet"
+            >Folk Dance Duet - 12/12/24</a
+          ><a class="event-item" href="#rule-indian-classical-dance-group"
+            >Indian Classical Dance (Group) - 07/01/25</a
           >
-          &
-          <a
-            href="https://www.linkedin.com/in/shashwatk1956/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="color: inherit; text-decoration: underline"
+        </div>
+        <!-- EVENT-LIST:END -->
+        <!-- EVENT-DETAILS:START -->
+        <div class="event-details" aria-live="polite">
+          <h2 class="event-title">General Rules for Solo Music Events</h2>
+          <ul class="event-rules">
+            <li>
+              For all the solo music events, only ONE accompanist is allowed.
+            </li>
+            <li>Keyboard only in Grand Piano mode or Acoustic guitar.</li>
+            <li>
+              Indian percussion instruments for Indian Solo Singing events like
+              Tabla, Mridangam may be used.
+            </li>
+            <li>
+              Western Acoustic Percussion Instruments for Western Solo events
+              like Djembe or Cajon may be used.
+            </li>
+            <li>No sequenced beats/samples or backing tracks allowed.</li>
+          </ul>
+        </div>
+        <!-- EVENT-DETAILS:END -->
+      </div>
+      <!-- EVENT-HANDBOOK:START -->
+      <section class="event-handbook" aria-labelledby="handbook-title">
+        <div class="section-bar">
+          <span>THE COMPLETE RULEBOOK</span><span>11 ENTRIES</span>
+        </div>
+        <h2 id="handbook-title">Stage events: all rules</h2>
+        <p>
+          Browse every event below, or use the selector above to focus on one
+          event.
+        </p>
+        <details id="rule-general-solo-music">
+          <summary>General Rules for Solo Music Events</summary>
+          <ul class="event-rules">
+            <li>
+              For all the solo music events, only ONE accompanist is allowed.
+            </li>
+            <li>Keyboard only in Grand Piano mode or Acoustic guitar.</li>
+            <li>
+              Indian percussion instruments for Indian Solo Singing events like
+              Tabla, Mridangam may be used.
+            </li>
+            <li>
+              Western Acoustic Percussion Instruments for Western Solo events
+              like Djembe or Cajon may be used.
+            </li>
+            <li>No sequenced beats/samples or backing tracks allowed.</li>
+          </ul>
+        </details>
+        <details id="rule-battle-of-bands-western">
+          <summary>Battle of Bands (Western) - 08/01/25</summary>
+          <ul class="event-rules">
+            <li>Time: 10+2 minutes (including setup and clearance time).</li>
+            <li>
+              In case of failure to adhere to the allotted time limit, output
+              volumes will be cut and there would be deduction of points/minus
+              extended (discretion of the judges).
+            </li>
+            <li>Minimum of 5 and maximum of 10 members per team.</li>
+            <li>No backing tracks, samples, and sequences are allowed.</li>
+            <li>A standard 5-piece drum kit will be provided.</li>
+            <li>Growling is NOT allowed.</li>
+            <li>
+              Band must have at least one vocalist and not more than three
+              vocalists.
+            </li>
+            <li>
+              If the team is performing its own composition, a copy of the
+              lyrics, in English, must be submitted at the time of registration
+              on campus and the lyrics will be checked for vulgarity and
+              profanity.
+            </li>
+            <li>
+              Failure to adhere to the given rules of this event will result in
+              disqualification.
+            </li>
+            <li>Clothing and grooming to be in University conduct.</li>
+          </ul>
+        </details>
+        <details id="rule-acapella-group">
+          <summary>Acapella (Group) - 10/12/24</summary>
+          <ul class="event-rules">
+            <li>Time: 10 + 2 mins (Entry to Exit Stage, Including setup).</li>
+            <li>
+              In case of failure to adhere to the allotted time limit, output
+              volumes will be cut and there would be deduction of points/min
+              (discretion of the judges).
+            </li>
+            <li>Both Indian and Western allowed.</li>
+            <li>
+              Minimum of 5 and Maximum of 10 members per team (Including a
+              Beatboxer).
+            </li>
+            <li>Beatboxer not compulsory.</li>
+            <li>No instruments or Backup Tracks allowed for Acapella.</li>
+            <li>Clothing and grooming to be in University conduct.</li>
+          </ul>
+        </details>
+        <details id="rule-battle-of-bands-indian">
+          <summary>Battle of Bands (Indian) - 04/01/25</summary>
+          <ul class="event-rules">
+            <li>Time: 10+2 minutes (including setup and clearance time).</li>
+            <li>
+              In case of failure to adhere to the allotted time limit, output
+              volumes will be cut and there would be deduction of points/min
+              (discretion of the judges).
+            </li>
+            <li>Team Size: 5 - 10 members.</li>
+            <li>
+              A copy of lyrics must be submitted if the performance includes an
+              original composition of the band/group.
+            </li>
+            <li>
+              If the lyrics are in any of the Indian languages, a copy of the
+              literal translation of the lyrics in English must be submitted at
+              the time of registration on campus.
+            </li>
+            <li>Lyrics will be checked for vulgarity and profanity.</li>
+            <li>Performances should only be in any of the Indian languages.</li>
+            <li>
+              Growling is not allowed; any pre-recorded music/sound or sequenced
+              samples are not allowed.
+            </li>
+            <li>
+              Bands/Groups must include a minimum of one Indian melodic or
+              percussion instrument.
+            </li>
+            <li>Clothing and grooming to be in University conduct.</li>
+          </ul>
+        </details>
+        <details id="rule-indian-solo">
+          <summary>Indian Folk and Film Singing (Solo) - 04/12/24</summary>
+          <ul class="event-rules">
+            <li>Time limit: 4+1 mins.</li>
+            <li>Only 1 accompanist allowed.</li>
+            <li>Use only Grand Piano tone for keyboard accompanists.</li>
+            <li>Accompanists can use an Acoustic guitar.</li>
+            <li>
+              Indian Percussive instruments like Tabla or Mridangam can be used.
+            </li>
+            <li>No sequenced beats/samples or backing tracks allowed.</li>
+            <li>No inappropriate lyrics.</li>
+            <li>Grooming and clothing to be appropriate.</li>
+          </ul>
+        </details>
+        <details id="rule-western-solo">
+          <summary>Western Singing (Solo) - 05/12/24</summary>
+          <ul class="event-rules">
+            <li>Time limit: 4+1 mins.</li>
+            <li>Best Original Composition will be awarded.</li>
+            <li>Only one Accompanist allowed.</li>
+            <li>
+              Use only Grand Piano tone for keyboard or Acoustic Guitar for
+              accompanying.
+            </li>
+            <li>
+              Western Acoustic Percussion Instruments like Djembe or Cajon may
+              be used.
+            </li>
+            <li>No sequenced beats/samples or backing tracks allowed.</li>
+            <li>No inappropriate lyrics allowed.</li>
+            <li>Grooming and clothing to be appropriate.</li>
+          </ul>
+        </details>
+        <details id="rule-indian-classical-dance-solo">
+          <summary>Indian Classical Dance Solo - 06/12/24</summary>
+          <ul class="event-rules">
+            <li>Time: 4+1 minutes on stage.</li>
+            <li>Only authentic classical song to be used.</li>
+            <li>Only one song permitted, no mixing of songs.</li>
+            <li>No live music allowed.</li>
+            <li>No film songs will be allowed.</li>
+            <li>
+              First 2 winners of the prelims to be selected for the finals.
+            </li>
+            <li>
+              Authentic costumes, hairstyle, and jewelry which represent the
+              dance form to be worn.
+            </li>
+            <li>
+              Deaneries with more than 5 participants to send 3 finalists;
+              deaneries with 3 to 5 participants to select only 2 finalists;
+              deaneries with less than 3 participants to select only 1 finalist.
+            </li>
+          </ul>
+        </details>
+        <details id="rule-indian-dance-group-non-theme">
+          <summary>
+            Indian Dance Group: Non-Theme (Film/Folk) - 09/01/25
+          </summary>
+          <ul class="event-rules">
+            <li>Time: 5+1 minutes on stage.</li>
+            <li>Fusion of songs is not allowed.</li>
+            <li>
+              Songs should be only from Indian films, no remixes, no album
+              songs.
+            </li>
+            <li>
+              Only Indian dance forms (including Bollywood, Contemporary) are
+              allowed.
+            </li>
+            <li>The songs must have lyrics.</li>
+            <li>Minimum 8 and maximum 15 members in a team.</li>
+            <li>Minimum props will be allowed.</li>
+            <li>
+              No fire on stage, no vulgarity in costume, movements, or lyrics.
+            </li>
+            <li>
+              First 3 winning teams of the prelims to be selected for the
+              finals.
+            </li>
+            <li>
+              Deaneries with more than 5 teams to send 3 finalist teams;
+              deaneries with 3 to 5 teams to select only 2 finalists; deaneries
+              with less than 3 teams to select only 1 finalist.
+            </li>
+          </ul>
+        </details>
+        <details id="rule-dance-duet">
+          <summary>Dance Duet - 10/12/24</summary>
+          <ul class="event-rules">
+            <li>Time: 2+1 minutes on stage.</li>
+            <li>Team of 2.</li>
+            <li>Only Indian film songs allowed.</li>
+            <li>Mixing of songs allowed (maximum 2 songs).</li>
+            <li>Vulgarity in movements and costume will not be entertained.</li>
+            <li>The use of fire and water on stage is not allowed.</li>
+            <li>No western dance form will be allowed.</li>
+            <li>
+              First 2 winners of the prelims to be selected for the finals.
+            </li>
+            <li>
+              Deaneries with more than 5 teams to send 3 finalist teams;
+              deaneries with 3 to 5 teams to select only 2 finalists; deaneries
+              with less than 3 teams to select only 1 finalist.
+            </li>
+          </ul>
+        </details>
+        <details id="rule-folk-dance-duet">
+          <summary>Folk Dance Duet - 12/12/24</summary>
+          <ul class="event-rules">
+            <li>Time: 4+1 minutes on stage.</li>
+            <li>Only one song permitted, no mixing of songs.</li>
+            <li>No live music allowed.</li>
+            <li>Authentic folk songs to be used.</li>
+            <li>Film songs and album songs not to be used.</li>
+            <li>
+              Authentic costumes, hairstyle, and jewelry which represent the
+              dance form to be worn.
+            </li>
+            <li>First 2 teams will be selected for the finals.</li>
+            <li>
+              Deaneries with more than 5 teams to send 3 finalist teams;
+              deaneries with 3 to 5 teams to select only 2 finalists; deaneries
+              with less than 3 teams to select only 1 finalist.
+            </li>
+          </ul>
+        </details>
+        <details id="rule-indian-classical-dance-group">
+          <summary>Indian Classical Dance (Group) - 07/01/25</summary>
+          <ul class="event-rules">
+            <li>Time: 6+1 minutes on stage.</li>
+            <li>Minimum 4 members and a maximum of 8 members per team.</li>
+            <li>No live music allowed.</li>
+            <li>Authentic Indian classical song to be selected.</li>
+            <li>Classical music from movies is not allowed.</li>
+            <li>
+              Authentic costumes, hairstyle, and jewelry which represent the
+              dance form to be worn.
+            </li>
+            <li>
+              Deaneries with more than 5 teams to send 3 finalist teams;
+              deaneries with 3 to 5 teams to select only 2 finalists; deaneries
+              with less than 3 teams to select only 1 finalist.
+            </li>
+          </ul>
+        </details>
+      </section>
+      <!-- EVENT-HANDBOOK:END -->
+    </main>
+    <footer class="site-footer">
+      <div>
+        <a class="footer-brand" href="index.html"
+          ><img src="./assets/images/blossoms-logo.png" alt="BLOSSOMS"
+        /></a>
+        <p>CHRIST University, Bengaluru<br />Yeshwanthpur Campus</p>
+      </div>
+      <div>
+        <span class="eyebrow">GET IN TOUCH</span>
+        <p>
+          Questions? Write to
+          <a href="mailto:swo.yeshwanthpur@christuniversity.in"
+            >swo.yeshwanthpur@christuniversity.in</a
+          ><br />or visit the SWO Office, 7th Floor, Block C.
+        </p>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; BLOSSOMS 2024&ndash;25</span
+        ><span
+          >Made by
+          <a href="https://www.linkedin.com/in/adarshagupta/">Adarsh Gupta</a>
+          &amp;
+          <a href="https://www.linkedin.com/in/shashwatk1956/"
             >Shashwat</a
-          >
-        </p>
+          ></span
+        >
       </div>
     </footer>
-
     <script src="./jsfile/stage_events.js"></script>
   </body>
 </html>

@@ -1,0 +1,172 @@
+/* One navigation component shared by every page. */
+html {
+  scrollbar-gutter: stable;
+}
+.site-header {
+  position: relative;
+  z-index: 30;
+  background: #090810;
+  border-bottom: 1px solid #c9b69830;
+}
+.site-nav {
+  width: min(1360px, calc(100% - 100px));
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  gap: 30px;
+}
+.institution {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.institution img {
+  display: block;
+  object-fit: contain;
+}
+.swo-identity img {
+  width: 96px;
+  height: 66px;
+}
+.christ-identity img {
+  width: 177px;
+  height: 66px;
+}
+.site-links {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  font-size: 18px;
+  color: #aaa2b4;
+  padding-left: 68px;
+}
+.site-links a {
+  position: relative;
+  padding: 14px 0;
+  transition: color 0.2s;
+}
+.site-links a:hover,
+.site-links [aria-current="page"] {
+  color: #d7c18c;
+}
+.site-links [aria-current="page"]:after {
+  content: "";
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  background: #d7c18c;
+}
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid #c9b69830;
+  width: 40px;
+  height: 40px;
+  padding: 11px;
+}
+.menu-toggle span {
+  display: block;
+  height: 1px;
+  background: #eeeae1;
+  margin: 5px 0;
+}
+@media (max-width: 1000px) {
+  .site-nav {
+    width: calc(100% - 60px);
+  }
+  .site-links {
+    gap: 27px;
+    padding-left: 30px;
+  }
+  .swo-identity img {
+    width: 80px;
+    height: 57px;
+  }
+  .christ-identity img {
+    width: 155px;
+    height: 58px;
+  }
+}
+@media (max-width: 800px) {
+  .site-nav {
+    width: calc(100% - 36px);
+    height: 82px;
+    gap: 15px;
+  }
+  .swo-identity img {
+    width: 68px;
+    height: 50px;
+  }
+  .christ-identity img {
+    width: 132px;
+    height: 50px;
+  }
+  .menu-toggle {
+    display: block;
+    order: 3;
+    width: 34px;
+    height: 34px;
+    padding: 8px;
+  }
+  .christ-identity {
+    margin-left: auto;
+  }
+  .site-links {
+    display: none;
+    position: absolute;
+    top: 81px;
+    left: 0;
+    right: 0;
+    background: #121018;
+    border-bottom: 1px solid #c9b69830;
+    padding: 22px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+    box-shadow: 0 16px 30px #0008;
+  }
+  .site-links.is-open {
+    display: flex;
+  }
+  .site-links a {
+    font-size: 18px;
+    padding: 12px;
+  }
+  .site-links [aria-current="page"]:after {
+    right: auto;
+    width: 24px;
+    bottom: 7px;
+    left: 12px;
+  }
+}
+
+.site-header {
+  width: 100%;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  color: #eeeae1;
+  line-height: 1.6;
+}
+.site-header a {
+  font-weight: 400;
+  letter-spacing: normal;
+}
+.site-header .menu-toggle {
+  border-radius: 0;
+  cursor: pointer;
+}
+.site-header a:focus-visible,
+.site-header button:focus-visible {
+  outline: 2px solid #d7c18c;
+  outline-offset: 6px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-header a {
+    transition: none;
+  }
+}

@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Elements
-  const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
-  const navLinks = document.querySelector(".nav-links");
-  const body = document.body;
   const eventsList = document.querySelector(".events-list");
   const eventDetails = document.querySelector(".event-details");
 
@@ -36,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     "proscenium-theatre": {
-      title: "Proscenium Theatre - 11/01/25s",
+      title: "Proscenium Theatre - 11/01/25",
       rules: [
         "Duration: 20 + 5 minutes (includes first stage setup and last stage clearance).",
         "Participants: Minimum 8 and Maximum of 25 – including backstage crew, lights, and production team. Minimum 6 actors must be involved.",
@@ -97,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   // Function to update event details
-  function updateEventDetails(eventId) {
+  function updateEventDetails(eventId, shouldScroll = true) {
     const eventData = eventsData[eventId];
     if (!eventData) return;
 
@@ -111,15 +108,22 @@ document.addEventListener("DOMContentLoaded", function () {
     // Update active state
     document.querySelectorAll(".event-item").forEach((item) => {
       item.classList.remove("active");
+      item.setAttribute("aria-pressed", "false");
     });
     const activeItem = document.querySelector(`[data-event="${eventId}"]`);
     if (activeItem) {
       activeItem.classList.add("active");
+      activeItem.setAttribute("aria-pressed", "true");
     }
 
     // Scroll to details on mobile
-    if (window.innerWidth <= 768) {
-      eventDetails.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (shouldScroll && window.innerWidth <= 768) {
+      eventDetails.scrollIntoView({
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? "auto"
+          : "smooth",
+        block: "start",
+      });
     }
   }
 
@@ -127,15 +131,23 @@ document.addEventListener("DOMContentLoaded", function () {
   function scrollToEvent(eventId) {
     const eventElement = document.querySelector(`[data-event="${eventId}"]`);
     if (eventElement) {
-      eventElement.scrollIntoView({ behavior: "smooth", block: "start" });
+      eventElement.scrollIntoView({
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? "auto"
+          : "smooth",
+        block: "start",
+      });
       updateEventDetails(eventId);
     }
   }
 
-  // Populate events list
+  // Replace the crawlable HTML links with the interactive event selector.
+  eventsList.replaceChildren();
   Object.keys(eventsData).forEach((eventId) => {
-    const eventElement = document.createElement("div");
+    const eventElement = document.createElement("button");
     eventElement.className = "event-item";
+    eventElement.type = "button";
+    eventElement.setAttribute("aria-pressed", "false");
     eventElement.setAttribute("data-event", eventId);
     eventElement.textContent = eventsData[eventId].title;
     eventElement.onclick = () => updateEventDetails(eventId);
@@ -143,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Handle URL parameter after populating events list
-  if (eventParam) {
+  if (eventParam && Object.hasOwn(eventsData, eventParam)) {
     // Small timeout to ensure DOM is ready
     setTimeout(() => {
       scrollToEvent(eventParam);
@@ -151,54 +163,6 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     // Select first event by default if no parameter
     const firstEventId = Object.keys(eventsData)[0];
-    updateEventDetails(firstEventId);
+    updateEventDetails(firstEventId, false);
   }
-
-  // Mobile menu toggle
-  mobileMenuBtn.addEventListener("click", function (e) {
-    e.stopPropagation();
-    this.classList.toggle("active");
-    navLinks.classList.toggle("active");
-    body.style.overflow = this.classList.contains("active") ? "hidden" : "";
-  });
-
-  // Close menu when clicking outside
-  document.addEventListener("click", function (e) {
-    if (!mobileMenuBtn.contains(e.target) && !navLinks.contains(e.target)) {
-      mobileMenuBtn.classList.remove("active");
-      navLinks.classList.remove("active");
-      body.style.overflow = "";
-    }
-  });
-
-  // Prevent menu close when clicking inside nav-links
-  navLinks.addEventListener("click", function (e) {
-    if (e.target.tagName === "A") {
-      mobileMenuBtn.classList.remove("active");
-      navLinks.classList.remove("active");
-      body.style.overflow = "";
-    }
-  });
-
-  // Handle resize events
-  let resizeTimer;
-  window.addEventListener("resize", () => {
-    // Prevent animation issues during resize
-    document.body.classList.add("resize-animation-stopper");
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-      document.body.classList.remove("resize-animation-stopper");
-    }, 400);
-
-    // Reset mobile menu on resize
-    if (window.innerWidth > 768) {
-      mobileMenuBtn.classList.remove("active");
-      navLinks.classList.remove("active");
-      body.style.overflow = "";
-    }
-  });
-
-  // Select first event by default
-  // const firstEventId = Object.keys(eventsData)[0];
-  // updateEventDetails(firstEventId);
 });
